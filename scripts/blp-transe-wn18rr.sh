@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source /pfs/data5/home/kit/stud/ucgvm//environment/bin/activate
 python train.py link_prediction with \
 dataset='WN18RR' \
 inductive=True \

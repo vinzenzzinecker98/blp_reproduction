@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from transformers import BertModel
+from transformers import DistilBertModel
 
 
 class LinkPrediction(nn.Module):
@@ -98,7 +98,7 @@ class BertEmbeddingsLP(InductiveLinkPrediction):
     def __init__(self, dim, rel_model, loss_fn, num_relations, encoder_name,
                  regularizer):
         super().__init__(dim, rel_model, loss_fn, num_relations, regularizer)
-        self.encoder = BertModel.from_pretrained(encoder_name,
+        self.encoder = DistilBertModel.from_pretrained(encoder_name,
                                                  output_attentions=False,
                                                  output_hidden_states=False)
         hidden_size = self.encoder.config.hidden_size
@@ -121,7 +121,7 @@ class WordEmbeddingsLP(InductiveLinkPrediction):
             raise ValueError('Must provided one of encoder_name or embeddings')
 
         if encoder_name is not None:
-            encoder = BertModel.from_pretrained(encoder_name)
+            encoder = DistilBertModel.from_pretrained(encoder_name)
             embeddings = encoder.embeddings.word_embeddings
         else:
             emb_tensor = torch.load(embeddings)

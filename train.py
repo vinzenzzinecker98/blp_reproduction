@@ -8,7 +8,7 @@ from sacred.run import Run
 from logging import Logger
 from sacred import Experiment
 from sacred.observers import MongoObserver
-from transformers import BertTokenizer, get_linear_schedule_with_warmup
+from transformers import DistilBertTokenizer, get_linear_schedule_with_warmup
 from collections import defaultdict
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -31,7 +31,6 @@ database = os.environ.get('DB_NAME')
 if all([uri, database]):
     ex.observers.append(MongoObserver(uri, database))
 
-
 @ex.config
 def config():
     dataset = 'umls'
@@ -40,7 +39,7 @@ def config():
     model = 'blp'
     rel_model = 'transe'
     loss_fn = 'margin'
-    encoder_name = 'bert-base-cased'
+    encoder_name = 'distilbert-base-uncased'
     regularizer = 0
     max_len = 32
     num_negatives = 64
@@ -266,7 +265,7 @@ def link_prediction(dataset, inductive, dim, model, rel_model, loss_fn,
                                   num_devices=num_devices)
     else:
         if model.startswith('bert') or model == 'blp':
-            tokenizer = BertTokenizer.from_pretrained(encoder_name)
+            tokenizer = DistilBertTokenizer.from_pretrained(encoder_name)
         else:
             tokenizer = GloVeTokenizer('data/glove/glove.6B.300d-maps.pt')
 
