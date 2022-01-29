@@ -8,13 +8,12 @@ from sacred.run import Run
 from logging import Logger
 from sacred import Experiment
 from sacred.observers import MongoObserver
-from transformers import DistilBertTokenizer, get_linear_schedule_with_warmup
+from transformers import DistilBertTokenizer, get_linear_schedule_with_warmup, AutoTokenizer
 from collections import defaultdict
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, balanced_accuracy_score
 import joblib
-
 from data import CATEGORY_IDS
 from data import GraphDataset, TextGraphDataset, GloVeTokenizer
 import models
@@ -266,6 +265,8 @@ def link_prediction(dataset, inductive, dim, model, rel_model, loss_fn,
     else:
         if model.startswith('bert') or model == 'blp':
             tokenizer = DistilBertTokenizer.from_pretrained(encoder_name)
+        elif model == "sbert":
+            tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
         else:
             tokenizer = GloVeTokenizer('data/glove/glove.6B.300d-maps.pt')
 

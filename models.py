@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from transformers import DistilBertModel
-
+from transformers import DistilBertModel, AutoTokenizer, AutoModel
+#from sentence_transformers import SentenceTransformer
 
 class LinkPrediction(nn.Module):
     """A general link prediction model with a lookup table for relation
@@ -139,6 +139,22 @@ class WordEmbeddingsLP(InductiveLinkPrediction):
     def _encode_entity(self, text_tok, text_mask):
         raise NotImplementedError
 
+class SentenceBERTEmbeddingsLP(InductiveLinkPrediction):
+    """Description encoder with pretrained embeddings, obtained from BERT or a
+    specified tensor file.
+    """
+    def __init__(self, dim, rel_model, loss_fn, num_relations, encoder_name,
+                 regularizer):
+        super().__init__(dim, rel_model, loss_fn, num_relations, regularizer)
+        self.encoder = AutoModel.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
+        hidden_size = self.encoder.config.hidden_size
+        self.enc_linear = nn.Linear(hidden_size, self.dim, bias=False)
+
+    def _encode_entity(self, text_tok, text_mask):
+        # Extract BERT representation of [CLS] token
+        embs = self.encoder(text_tok, text_mask)[0][:, 0]
+        embs = self.enc_linear(embs)
+        return embs
 
 class BOW(WordEmbeddingsLP):
     """Bag-of-words (BOW) description encoder, with BERT low-level embeddings.

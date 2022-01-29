@@ -1,13 +1,15 @@
 #!/bin/bash
+
 source /pfs/data5/home/kit/stud/ucgvm//environment/bin/activate
+
 python train.py link_prediction with \
-dataset='FB15k-237' \
-inductive=True \
+dataset='umls' \
+inductive=False \
 dim=128 \
-model='blp' \
-rel_model='distmult' \
+model='sbert' \
+rel_model='transe' \
 loss_fn='margin' \
-encoder_name='distilbert-base-uncased' \
+encoder_name='sentence-transformers/bert-base-nli-mean-tokens' \
 regularizer=0 \
 max_len=32 \
 num_negatives=64 \
