@@ -121,8 +121,9 @@ class WordEmbeddingsLP(InductiveLinkPrediction):
             raise ValueError('Must provided one of encoder_name or embeddings')
 
         if encoder_name is not None:
-            encoder = DistilBertModel.from_pretrained(encoder_name)
+            encoder = AutoModel.from_pretrained(encoder_name)
             embeddings = encoder.embeddings.word_embeddings
+            print("HIDDEN SIZE IS: ", encoder.config.hidden_size)
         else:
             emb_tensor = torch.load(embeddings)
             num_embeddings, embedding_dim = emb_tensor.shape
@@ -159,6 +160,8 @@ class SentenceBERTEmbeddingsLP(InductiveLinkPrediction):
 class BOW(WordEmbeddingsLP):
     """Bag-of-words (BOW) description encoder, with BERT low-level embeddings.
     """
+    
+        
     def _encode_entity(self, text_tok, text_mask=None):
         if text_mask is None:
             text_mask = torch.ones_like(text_tok, dtype=torch.float)
@@ -170,6 +173,25 @@ class BOW(WordEmbeddingsLP):
 
         return embs
 
+class Linear_Sbert(WordEmbeddingsLP):
+    def __init__(self, dim, rel_model, loss_fn, num_relations, regularizer,
+                 encoder_name=None, embeddings=None):
+        super().__init__(rel_model, loss_fn, num_relations, regularizer,
+                         dim, encoder_name, embeddings)  
+        #hidden_size = AutoModel.from_pretrained(encoder_name).config.hidden_size
+        self.enc_linear = nn.Linear(768, 4, bias=False)
+
+    def _encode_entity(self, text_tok, text_mask=None):
+        if text_mask is None:
+            text_mask = torch.ones_like(text_tok, dtype=torch.float)
+
+        # get embeddings:        
+        embs = self.embeddings(text_tok)
+
+        #pass through linear layer
+        embs = self.enc_linear(embs)
+
+        return embs
 
 class DKRL(WordEmbeddingsLP):
     """Description-Embodied Knowledge Representation Learning (DKRL) with CNN

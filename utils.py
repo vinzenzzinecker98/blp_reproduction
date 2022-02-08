@@ -24,6 +24,9 @@ def get_model(model, dim, rel_model, loss_fn, num_entities, num_relations,
         return models.TransductiveLinkPrediction(dim, rel_model, loss_fn,
                                                  num_entities, num_relations,
                                                  regularizer)
+    elif model =="linearsbert":
+        return models.Linear_Sbert(dim, rel_model, loss_fn, num_relations, regularizer,
+                           encoder_name)
     elif model == 'sbert':
         return models.SentenceBERTEmbeddingsLP(dim, rel_model, loss_fn, num_relations,
                                        encoder_name, regularizer)
