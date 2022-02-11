@@ -1,7 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from transformers import DistilBertModel, AutoTokenizer, AutoModel
+from transformers import DistilBertModel, AutoModel
+import lookupembs 
 #from sentence_transformers import SentenceTransformer
 
 class LinkPrediction(nn.Module):
@@ -24,7 +25,8 @@ class LinkPrediction(nn.Module):
             self.score_fn = simple_score
         else:
             raise ValueError(f'Unknown relational model {rel_model}.')
-
+        #if (encode_relation_names = true):
+            #self.rel_emb = nn.Embedding()
         self.rel_emb = nn.Embedding(num_relations, self.dim)
         nn.init.xavier_uniform_(self.rel_emb.weight.data)
 
@@ -123,7 +125,7 @@ class WordEmbeddingsLP(InductiveLinkPrediction):
         if encoder_name is not None:
             encoder = AutoModel.from_pretrained(encoder_name)
             embeddings = encoder.embeddings.word_embeddings
-            print("HIDDEN SIZE IS: ", encoder.config.hidden_size)
+            #print("Init without encoder")
         else:
             emb_tensor = torch.load(embeddings)
             num_embeddings, embedding_dim = emb_tensor.shape
@@ -179,14 +181,14 @@ class Linear_Sbert(WordEmbeddingsLP):
         super().__init__(rel_model, loss_fn, num_relations, regularizer,
                          dim, encoder_name, embeddings)  
         #hidden_size = AutoModel.from_pretrained(encoder_name).config.hidden_size
-        self.enc_linear = nn.Linear(768, 4, bias=False)
+        self.enc_linear = nn.Linear(768, dim, bias=False)
 
     def _encode_entity(self, text_tok, text_mask=None):
         if text_mask is None:
             text_mask = torch.ones_like(text_tok, dtype=torch.float)
 
         # get embeddings:        
-        embs = self.embeddings(text_tok)
+        embs = lookupembs.sbertlookup(text_tok, text_mask)
 
         #pass through linear layer
         embs = self.enc_linear(embs)

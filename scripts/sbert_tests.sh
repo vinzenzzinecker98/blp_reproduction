@@ -6,7 +6,7 @@ python train.py link_prediction with \
 dataset='umls' \
 inductive=False \
 dim=128 \
-model='sbert' \
+model='linearsbert' \
 rel_model='transe' \
 loss_fn='margin' \
 encoder_name='sentence-transformers/bert-base-nli-mean-tokens' \
