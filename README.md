@@ -10,3 +10,8 @@ update the paths:
  - in ./scripts change the paths to point to the virtual environment
 
 Run the preconfigured scripts in ./scripts, or run `train.py link_prediction` with all arguments
+
+Models:
+ - model="blp": Uses the original architecture, except for using DistilBert instead of BERT for faster Runtime.
+ - model="linearsbert": Uses only pretrained embeddings (sentence-BERT from the transformers library), with a Linear Layer
+- 
