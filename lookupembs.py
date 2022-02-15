@@ -5,6 +5,7 @@ from transformers import AutoTokenizer, AutoModel
 
 model = AutoModel.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
 device = torch.device('cuda:0')
+model.to(device)
 global embeddings
 embeddings ={}
 
@@ -14,7 +15,8 @@ def mean_pooling(model_output, attention_mask):
     return torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
 
 def sbertlookup(text, mask):
-    #print("TEXT:", text)
+    #print("device text: ", text.is_cuda)
+    #print("device mask: ", mask.is_cuda)
     if text in embeddings.keys():
         return embeddings[text]
     else:
@@ -23,5 +25,3 @@ def sbertlookup(text, mask):
         sentence_embeddings = mean_pooling(x, mask)
         embeddings[text]=sentence_embeddings
         return sentence_embeddings.to(device)
-def test():
-    print(sbertlookup("Dies ist ein Beispielsatz. Dies ist der zweite Satz."))
