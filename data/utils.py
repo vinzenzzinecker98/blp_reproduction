@@ -6,8 +6,25 @@ import random
 import os.path as osp
 from collections import Counter, defaultdict
 import torch
+import numpy as np
 import rdflib
 
+def wiki2vec_txt_to_tensor(path="enwiki_20180420_300d.txt", dim=300, vocab=4530030):
+    dict={}
+    t=torch.zeros([vocab,dim], dtype=torch.float32)
+    with open(path, "r") as file:
+        n=0
+        for line in file:
+            if n%1000==0:
+                print(f'{n} done')
+            s = line.strip().split()              
+            for i in range(dim):
+                t[n,i]=float(s[i+1])        
+            dict[s[0]]=n
+            n=n+1
+    torch.save(t, "wiki2vec.pt")        
+    torch.save(dict, "wiki2vec-map.pt")  
+    return "success"  
 
 def parse_triples(triples_file):
     """Read a file containing triples, with head, relation, and tail
