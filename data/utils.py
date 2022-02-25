@@ -13,14 +13,14 @@ def wiki2vec_txt_to_tensor(path="./wiki2vec/enwiki_20180420_300d.txt", dim=300, 
     #first line of the input file has to be removed before running this (first line declares length/dim)
     print("start")    
     dict={}
-    t=torch.zeros([vocab,dim], dtype=torch.float32)
+    t=torch.zeros([vocab+1,dim], dtype=torch.float32) #vocab size +1 for [UNK]
     ex=0
     print("start loop")
     with open(path, "r") as file:
         n=0
         for line in file:
             if n%1000==0:
-                print(f'{n} done')
+                print(f'{n} done, {ex} embeddings failed')
             s = line.strip().split()              
             for i in range(dim):
                 try:
