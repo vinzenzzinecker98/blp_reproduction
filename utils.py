@@ -32,7 +32,7 @@ def get_model(model, dim, rel_model, loss_fn, num_entities, num_relations,
                                        encoder_name, regularizer)
     elif model == 'wiki2vec-bow':
         return models.BOW(rel_model, loss_fn, num_relations, regularizer,
-                          embeddings='data/wiki2vec/wiki2vec_400000.pt')
+                          embeddings='data/wiki2vec/enwiki_20180420_300d.pt')
     else:
         raise ValueError(f'Unkown model {model}')
 

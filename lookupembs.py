@@ -4,7 +4,7 @@ import torch
 from transformers import AutoTokenizer, AutoModel
 
 model = AutoModel.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
-device = torch.device('cuda:0')
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 model.to(device)
 #global embeddings
 #embeddings ={}
