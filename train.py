@@ -267,6 +267,8 @@ def link_prediction(dataset, inductive, dim, model, rel_model, loss_fn,
             tokenizer = DistilBertTokenizer.from_pretrained(encoder_name)
         elif model == "linearsbert":
             tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
+        elif model == "wiki2vec-bow":
+            tokenizer = GloVeTokenizer('data/wiki2vec/wiki2vec_400000-map.pt')
         else:
             tokenizer = GloVeTokenizer('data/glove/glove.6B.300d-maps.pt')
 

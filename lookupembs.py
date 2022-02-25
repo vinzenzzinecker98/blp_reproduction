@@ -6,8 +6,8 @@ from transformers import AutoTokenizer, AutoModel
 model = AutoModel.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
 device = torch.device('cuda:0')
 model.to(device)
-global embeddings
-embeddings ={}
+#global embeddings
+#embeddings ={}
 
 def mean_pooling(model_output, attention_mask):
     token_embeddings = model_output[0] #First element of model_output contains all token embeddings
@@ -17,11 +17,11 @@ def mean_pooling(model_output, attention_mask):
 def sbertlookup(text, mask):
     #print("device text: ", text.is_cuda)
     #print("device mask: ", mask.is_cuda)
-    if text in embeddings.keys():
-        return embeddings[text]
-    else:
-        with torch.no_grad():
-            x = model(text, mask)
-        sentence_embeddings = mean_pooling(x, mask)
-        embeddings[text]=sentence_embeddings
-        return sentence_embeddings.to(device)
+    #if text in embeddings.keys():
+    #    return embeddings[text]
+    #else:
+    with torch.no_grad(): #no grad = saving time, not calculating gradients, as no backprop needed
+        x = model(text, mask)
+    sentence_embeddings = mean_pooling(x, mask)
+    #embeddings[text]=sentence_embeddings
+    return sentence_embeddings.to(device)

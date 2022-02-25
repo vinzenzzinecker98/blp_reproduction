@@ -300,13 +300,14 @@ class TextGraphDataset(GraphDataset):
 
 class GloVeTokenizer:
     def __init__(self, vocab_dict_file, uncased=True):
-        self.word2idx = torch.load(vocab_dict_file)
+        self.word2idx = torch.load(vocab_dict_file)       
         self.uncased = uncased
 
     def encode(self, text, max_length, return_tensors):
         if self.uncased:
             text = text.lower()
         tokens = nltk.word_tokenize(text)
+        self.word2idx[UNK]
         encoded = [self.word2idx.get(t, self.word2idx[UNK]) for t in tokens]
         encoded = [encoded[:max_length]]
 
