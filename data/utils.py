@@ -9,9 +9,13 @@ import torch
 import numpy as np
 import rdflib
 
-def wiki2vec_txt_to_tensor(path="enwiki_20180420_300d.txt", dim=300, vocab=4530030):
+def wiki2vec_txt_to_tensor(path="./wiki2vec/enwiki_20180420_300d.txt", dim=300, vocab=4530030):
+    #first line of the input file has to be removed before running this (first line declares length/dim)
+    print("start")    
     dict={}
     t=torch.zeros([vocab,dim], dtype=torch.float32)
+    ex=0
+    print("start loop")
     with open(path, "r") as file:
         n=0
         for line in file:
@@ -19,12 +23,28 @@ def wiki2vec_txt_to_tensor(path="enwiki_20180420_300d.txt", dim=300, vocab=45300
                 print(f'{n} done')
             s = line.strip().split()              
             for i in range(dim):
-                t[n,i]=float(s[i+1])        
-            dict[s[0]]=n
+                try:
+                    t[n,i]=float(s[i+1])
+                except:
+                    ex=ex+1
+                    break
+            if(s[0][0:6]=="ENTITY/"):
+                name = s[0][7:-1]
+            else:
+                name = s[0]
+            dict[name]=n
             n=n+1
-    torch.save(t, "wiki2vec.pt")        
-    torch.save(dict, "wiki2vec-map.pt")  
-    return "success"  
+
+    #compute average embedding across all vocab - this will be used as embedding of unknown word.       
+    average = torch.mean(t,0)
+    t[vocab]=average
+    dict["[UNK]"]=vocab
+
+    print(f"Done with {ex} Exceptions")
+    savemodel=path[0:-4]+".pt"
+    savemap=path[0:-4]+"-map.pt"
+    torch.save(t, savemodel)        
+    torch.save(dict, savemap)
 
 def parse_triples(triples_file):
     """Read a file containing triples, with head, relation, and tail
@@ -387,7 +407,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('command', choices=['drop_entities', 'load_embs',
                                             'categorize',
-                                            'get_ranking_descriptions'])
+                                            'get_ranking_descriptions', 'wiki2vec'])
     parser.add_argument('--file', help='Input file')
     parser.add_argument('--dbp_file', help='DBpedia ttl file with rdf:comment'
                                            ' field for entities')
@@ -409,5 +429,7 @@ if __name__ == '__main__':
     elif args.command == 'get_ranking_descriptions':
         if args.file is None or args.dbp_file is None:
             raise ValueError('--file and --dbp_file must be provided to'
-                             ' get_ranking_descriptions')
+                             ' get_ranking_descriptions') 
         get_ranking_descriptions(args.file, args.dbp_file, args.redirects_file)
+    elif args.command == 'wiki2vec':
+        wiki2vec_txt_to_tensor()
