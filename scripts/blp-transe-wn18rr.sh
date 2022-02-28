@@ -19,4 +19,5 @@ emb_batch_size=512 \
 eval_batch_size=64 \
 max_epochs=40 \
 checkpoint=None \
-use_cached_text=False
+use_cached_text=False \
+output_dir="output/distilbert-transe-wn18rr/"

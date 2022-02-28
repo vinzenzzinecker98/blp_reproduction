@@ -18,4 +18,5 @@ emb_batch_size=12288 \
 eval_batch_size=2 \
 max_epochs=5 \
 checkpoint=None \
-use_cached_text=False
+use_cached_text=False \
+output_dir="output/distilbert-simple-wikidata5m/"
