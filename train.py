@@ -18,8 +18,9 @@ from data import CATEGORY_IDS
 from data import GraphDataset, TextGraphDataset, GloVeTokenizer
 import models
 import utils
+from pathlib import Path
 
-OUT_PATH = 'output/output_dir'
+OUT_PATH = None
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 ex = Experiment()
@@ -243,6 +244,7 @@ def link_prediction(dataset, inductive, dim, model, rel_model, loss_fn,
                     max_epochs, checkpoint, use_cached_text,
                     _run: Run, _log: Logger, output_dir):
     OUT_PATH=output_dir
+    Path(OUT_PATH).mkdir(parents=True, exist_ok=True)
     drop_stopwords = model in {'bert-bow', 'bert-dkrl',
                                'glove-bow', 'glove-dkrl'}
 
