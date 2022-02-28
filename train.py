@@ -19,7 +19,7 @@ from data import GraphDataset, TextGraphDataset, GloVeTokenizer
 import models
 import utils
 
-OUT_PATH = 'output/'
+OUT_PATH = 'output/output_dir'
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 ex = Experiment()
@@ -241,7 +241,8 @@ def link_prediction(dataset, inductive, dim, model, rel_model, loss_fn,
                     encoder_name, regularizer, max_len, num_negatives, lr,
                     use_scheduler, batch_size, emb_batch_size, eval_batch_size,
                     max_epochs, checkpoint, use_cached_text,
-                    _run: Run, _log: Logger):
+                    _run: Run, _log: Logger, output_dir):
+    OUT_PATH=output_dir
     drop_stopwords = model in {'bert-bow', 'bert-dkrl',
                                'glove-bow', 'glove-dkrl'}
 
