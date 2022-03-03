@@ -268,7 +268,7 @@ def link_prediction(dataset, inductive, dim, model, rel_model, loss_fn,
     else:
         if model.startswith('bert') or model == 'blp':
             tokenizer = DistilBertTokenizer.from_pretrained(encoder_name)
-        elif model == "linearsbert":
+        elif model == "linearsbert" or model == "sbert":
             tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
         elif model == "wiki2vec-bow":
             #memory issues, use only 400000.
