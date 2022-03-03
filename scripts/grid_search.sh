@@ -24,7 +24,8 @@ emb_batch_size=512 \
 eval_batch_size=64 \
 max_epochs=40 \
 checkpoint=None \
-use_cached_text=False
+use_cached_text=False \
+output_dir="output/gridsearch/1e5margin/"
 timestamp
 echo '2e5, margin'
 python train.py link_prediction with \
@@ -45,7 +46,8 @@ emb_batch_size=512 \
 eval_batch_size=64 \
 max_epochs=40 \
 checkpoint=None \
-use_cached_text=False
+use_cached_text=False \
+output_dir="output/gridsearch/2e5margin/"
 timestamp
 echo '5e5, margin'
 python train.py link_prediction with \
@@ -66,7 +68,8 @@ emb_batch_size=512 \
 eval_batch_size=64 \
 max_epochs=40 \
 checkpoint=None \
-use_cached_text=False
+use_cached_text=False \
+output_dir="output/gridsearch/5e5margin/"
 timestamp
 echo '1e5, nll'
 python train.py link_prediction with \
@@ -87,7 +90,8 @@ emb_batch_size=512 \
 eval_batch_size=64 \
 max_epochs=40 \
 checkpoint=None \
-use_cached_text=False
+use_cached_text=False \
+output_dir="output/gridsearch/1e5nll/"
 timestamp
 echo '2e5, nll'
 python train.py link_prediction with \
@@ -108,7 +112,8 @@ emb_batch_size=512 \
 eval_batch_size=64 \
 max_epochs=40 \
 checkpoint=None \
-use_cached_text=False
+use_cached_text=False \
+output_dir="output/gridsearch/2e5nll/"
 timestamp
 echo '5e5, nll'
 python train.py link_prediction with \
@@ -129,5 +134,6 @@ emb_batch_size=512 \
 eval_batch_size=64 \
 max_epochs=40 \
 checkpoint=None \
-use_cached_text=False
+use_cached_text=False \
+output_dir="output/gridsearch/5e5nll/"
 timestamp

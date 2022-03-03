@@ -3,7 +3,7 @@
 source /pfs/data5/home/kit/stud/ucgvm//environment/bin/activate
 
 python train.py link_prediction with \
-dataset='FB15k-237' \
+dataset='WN18RR' \
 inductive=True \
 dim=128 \
 model='sbert' \
@@ -21,4 +21,4 @@ eval_batch_size=64 \
 max_epochs=40 \
 checkpoint=None \
 use_cached_text=False \
-output_dir="output/sbert-transe-fb15k237/"
+output_dir="output/sbert-transe-wn18rr/"
