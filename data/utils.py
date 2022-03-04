@@ -9,7 +9,7 @@ import torch
 import numpy as np
 import rdflib
 
-def wiki2vec_txt_to_tensor(path="./wiki2vec/wiki2vec_400000x300.txt", dim=300, vocab=400000):
+def wiki2vec_txt_to_tensor(path="./wiki2vec/wiki2vec_800000x300.txt", dim=300, vocab=800000):
     #first line of the input file has to be removed before running this (first line declares length/dim)
     print("start")    
     dict={}
