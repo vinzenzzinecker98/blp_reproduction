@@ -18,4 +18,4 @@ eval_batch_size=32 \
 max_epochs=40 \
 checkpoint=None \
 use_cached_text=False \
-output_dir="output/wiki2vec-transe-fb15k237/"
+output_dir="output/wiki2vec-simple-fb15k237/"
