@@ -271,9 +271,9 @@ def link_prediction(dataset, inductive, dim, model, rel_model, loss_fn,
         elif model == "linearsbert" or model == "sbert":
             tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
         elif model == "wiki2vec-bow":
-            #memory issues, use only 400000.
+            #memory issues, use only 400000/800000.
             #tokenizer = GloVeTokenizer('data/wiki2vec/enwiki_20180420_300d-map.pt')
-            tokenizer = GloVeTokenizer('data/wiki2vec/wiki2vec_400000-map.pt')
+            tokenizer = GloVeTokenizer('data/wiki2vec/wiki2vec_800000-map.pt')
         else:
             tokenizer = GloVeTokenizer('data/glove/glove.6B.300d-maps.pt')
 
