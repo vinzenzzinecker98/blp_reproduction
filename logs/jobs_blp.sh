@@ -13,7 +13,7 @@ sbatch --gres=gpu:2 --nodes=1 --partition=gpu_4 --ntasks=1 --time=03:00:00 --mem
 sbatch --gres=gpu:2 --nodes=1 --partition=gpu_4 --ntasks=1 --time=03:00:00 --mem-per-gpu=5000mb --job-name=wordnet_simple --output=/pfs/data5/home/kit/stud/ucgvm/output_WN_SimplE_DistilBERT.txt scripts/blp-simple-wn18rr.sh
 
 #wikidata
-sbatch --gres=gpu:8 --nodes=1 --partition=gpu_8 --ntasks=1 --time=48:00:00 --mem-per-gpu=94000mb --job-name=wikidata_transe --output=/pfs/data5/home/kit/stud/ucgvm/output_Wikidata5m_TransE_DistilBERT.txt scripts/blp-transe-wikidata5m.sh
+sbatch --gres=gpu:4 --nodes=1 --partition=gpu_4 --ntasks=1 --time=48:00:00 --mem-per-gpu=94000mb --job-name=wikidata_transe --output=/pfs/data5/home/kit/stud/ucgvm/output_Wikidata5m_TransE_DistilBERT.txt scripts/blp-transe-wikidata5m.sh
 sbatch --gres=gpu:2 --nodes=1 --partition=gpu_4 --ntasks=1 --time=15:00:00 --mem-per-gpu=10000mb --job-name=wikidata_simple --output=/pfs/data5/home/kit/stud/ucgvm/output_Wikidata5m_SimplE_DistilBERT.txt scripts/blp-simple-wikidata5m.sh
 sbatch --gres=gpu:2 --nodes=1 --partition=gpu_4 --ntasks=1 --time=15:00:00 --mem-per-gpu=10000mb --job-name=wikidata_distmult --output=/pfs/data5/home/kit/stud/ucgvm/output_Wikidata5m_distmult_DistilBERT.txt scripts/blp-distmult-wikidata5m.sh
 sbatch --gres=gpu:2 --nodes=1 --partition=gpu_4 --ntasks=1 --time=15:00:00 --mem-per-gpu=10000mb --job-name=wikidata_complex --output=/pfs/data5/home/kit/stud/ucgvm/output_Wikidata5m_complex_DistilBERT.txt scripts/blp-complex-wikidata5m.sh
@@ -32,4 +32,21 @@ sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=3:00:00 --mem-
 sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=30:00:00 --mem-per-gpu=10000mb --job-name=gridsearch --output=/pfs/data5/home/kit/stud/ucgvm/output_FB_TransE_LinearSBERT_GRIDSEARCH.txt scripts/grid_search.sh
 
 #wiki2vec
-sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=06:00:00 --mem-per-gpu=5000mb --job-name=wiki2vec_test --output=/pfs/data5/home/kit/stud/ucgvm/output_FB_TransE_Wiki2vec.txt scripts/wiki2vec-bow-transe-fb15k237.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=01:30:00 --mem-per-gpu=5000mb --job-name=wiki2vec-bow-transe-fb15k237 --output=/pfs/data5/home/kit/stud/ucgvm/output_FB_TransE_Wiki2vec_800000.txt scripts/wiki2vec-bow-transe-fb15k237.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=01:30:00 --mem-per-gpu=5000mb --job-name=wiki2vec-bow-simple-fb15k237 --output=/pfs/data5/home/kit/stud/ucgvm/output_FB_simple_Wiki2vec.txt scripts/wiki2vec-bow-simple-fb15k237.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=01:30:00 --mem-per-gpu=5000mb --job-name=wiki2vec-bow-complex-fb15k237 --output=/pfs/data5/home/kit/stud/ucgvm/output_FB_complex_Wiki2vec.txt scripts/wiki2vec-bow-complex-fb15k237.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=01:30:00 --mem-per-gpu=5000mb --job-name=wiki2vec-bow-distmult-fb15k237 --output=/pfs/data5/home/kit/stud/ucgvm/output_FB_distmult_Wiki2vec.txt scripts/wiki2vec-bow-distmult-fb15k237.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=01:30:00 --mem-per-gpu=5000mb --job-name=wiki2vec-bow-transe-wn18rr --output=/pfs/data5/home/kit/stud/ucgvm/output_WN_TransE_Wiki2vec800000.txt scripts/wiki2vec-bow-transe-wn18rr.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=01:30:00 --mem-per-gpu=5000mb --job-name=wiki2vec-bow-simple-wn18rr --output=/pfs/data5/home/kit/stud/ucgvm/output_WN_simple_Wiki2vec.txt scripts/wiki2vec-bow-simple-wn18rr.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=01:30:00 --mem-per-gpu=5000mb --job-name=wiki2vec-bow-complex-wn18rr --output=/pfs/data5/home/kit/stud/ucgvm/output_WN_complex_Wiki2vec.txt scripts/wiki2vec-bow-complex-wn18rr.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=01:30:00 --mem-per-gpu=5000mb --job-name=wiki2vec-bow-distmult-wn18rr --output=/pfs/data5/home/kit/stud/ucgvm/output_WN_distmult_Wiki2vec.txt scripts/wiki2vec-bow-distmult-wn18rr.sh
+ 
+
+
+#gridsearch further
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=4:00:00 --mem-per-gpu=5000mb --job-name=grid2 --output=/pfs/data5/home/kit/stud/ucgvm/output_Gridsearchmargin2e4.txt scripts/gridsearch_margin_2e4.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=4:00:00 --mem-per-gpu=5000mb --job-name=grid3 --output=/pfs/data5/home/kit/stud/ucgvm/output_Gridsearchmargin1e4.txt scripts/gridsearch_margin_1e4.sh
+
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=4:00:00 --mem-per-gpu=5000mb --job-name=grid3 --output=/pfs/data5/home/kit/stud/ucgvm/output_Gridsearchmargin2e4.txt scripts/gridsearch_margin_5e4.sh
+sbatch --gres=gpu:1 --nodes=1 --partition=gpu_4 --ntasks=1 --time=4:00:00 --mem-per-gpu=5000mb --job-name=grid4 --output=/pfs/data5/home/kit/stud/ucgvm/output_Gridsearchmargin1e4.txt scripts/gridsearch_margin_1e3.sh
+
