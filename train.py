@@ -409,7 +409,8 @@ def link_prediction(dataset, inductive, dim, model, rel_model, loss_fn,
 
 @ex.command
 def node_classification(dataset, checkpoint, _run: Run, _log: Logger):
-    ent_emb = torch.load(f'output/ent_emb-{checkpoint}.pt', map_location='cpu')
+    path="output/"+checkpoint+"/"
+    ent_emb = torch.load(f'{path}ent_emb-None.pt', map_location='cpu')
     if isinstance(ent_emb, tuple):
         ent_emb = ent_emb[0]
 
@@ -417,7 +418,7 @@ def node_classification(dataset, checkpoint, _run: Run, _log: Logger):
     num_embs, emb_dim = ent_emb.shape
     _log.info(f'Loaded {num_embs} embeddings with dim={emb_dim}')
 
-    emb_ids = torch.load(f'output/ents-{checkpoint}.pt', map_location='cpu')
+    emb_ids = torch.load(f'{path}ents-None.pt', map_location='cpu')
     ent2idx = utils.make_ent2idx(emb_ids, max_ent_id=emb_ids.max()).numpy()
     maps = torch.load(f'data/{dataset}/maps.pt')
     ent_ids = maps['ent_ids']
