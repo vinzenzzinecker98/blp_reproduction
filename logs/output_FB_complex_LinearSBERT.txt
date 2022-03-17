@@ -1,0 +1,1819 @@
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /home/kit/stud/ucgvm/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     /home/kit/stud/ucgvm/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+19:26:06 - WARNING - root - Added new config entry: "output_dir"
+19:26:06 - WARNING - train - No observers have been added to this run
+19:26:06 - INFO - train - Running command 'link_prediction'
+19:26:06 - INFO - train - Started
+19:26:06 - INFO - link_prediction - CUDA devices used: 1
+Reading entity descriptions:   0%|          | 0/14541 [00:00<?, ?it/s]Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+Reading entity descriptions:  64%|██████▎   | 9251/14541 [00:05<00:02, 1850.17it/s]Reading entity descriptions: 100%|██████████| 14541/14541 [00:07<00:00, 1864.45it/s]
+19:26:24 - INFO - link_prediction - Epoch 1/40 [0/3360]: 0.979704
+19:26:35 - INFO - link_prediction - Epoch 1/40 [168/3360]: 1.001389
+19:26:47 - INFO - link_prediction - Epoch 1/40 [336/3360]: 0.957493
+19:26:58 - INFO - link_prediction - Epoch 1/40 [504/3360]: 0.761536
+19:27:10 - INFO - link_prediction - Epoch 1/40 [672/3360]: 0.626169
+19:27:21 - INFO - link_prediction - Epoch 1/40 [840/3360]: 0.412598
+19:27:33 - INFO - link_prediction - Epoch 1/40 [1008/3360]: 0.320424
+19:27:44 - INFO - link_prediction - Epoch 1/40 [1176/3360]: 0.290500
+19:27:56 - INFO - link_prediction - Epoch 1/40 [1344/3360]: 0.270392
+19:28:08 - INFO - link_prediction - Epoch 1/40 [1512/3360]: 0.204689
+19:28:19 - INFO - link_prediction - Epoch 1/40 [1680/3360]: 0.145880
+19:28:31 - INFO - link_prediction - Epoch 1/40 [1848/3360]: 0.192835
+19:28:42 - INFO - link_prediction - Epoch 1/40 [2016/3360]: 0.168112
+19:28:54 - INFO - link_prediction - Epoch 1/40 [2184/3360]: 0.152926
+19:29:06 - INFO - link_prediction - Epoch 1/40 [2352/3360]: 0.129825
+19:29:17 - INFO - link_prediction - Epoch 1/40 [2520/3360]: 0.142523
+19:29:29 - INFO - link_prediction - Epoch 1/40 [2688/3360]: 0.112215
+19:29:40 - INFO - link_prediction - Epoch 1/40 [2856/3360]: 0.114877
+19:29:52 - INFO - link_prediction - Epoch 1/40 [3024/3360]: 0.101710
+19:30:04 - INFO - link_prediction - Epoch 1/40 [3192/3360]: 0.106944
+19:30:15 - INFO - link_prediction - Evaluating on sample of training set
+19:30:16 - INFO - eval_link_prediction - [2,560/11,633]
+19:30:18 - INFO - eval_link_prediction - [5,120/11,633]
+19:30:19 - INFO - eval_link_prediction - [7,680/11,633]
+19:30:20 - INFO - eval_link_prediction - [10,240/11,633]
+19:30:21 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:30:23 - INFO - eval_link_prediction - [131/659]
+19:30:25 - INFO - eval_link_prediction - [262/659]
+19:30:26 - INFO - eval_link_prediction - [393/659]
+19:30:28 - INFO - eval_link_prediction - [524/659]
+19:30:29 - INFO - eval_link_prediction - [655/659]
+19:30:29 - INFO - eval_link_prediction - train mrr: 0.0703  hits@1: 0.0316  hits@3: 0.0643  hits@10: 0.1436  
+19:30:29 - INFO - link_prediction - Evaluating on validation set
+19:30:30 - INFO - eval_link_prediction - [3,072/13,087]
+19:30:32 - INFO - eval_link_prediction - [6,144/13,087]
+19:30:34 - INFO - eval_link_prediction - [9,216/13,087]
+19:30:35 - INFO - eval_link_prediction - [12,288/13,087]
+19:30:36 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:30:38 - INFO - eval_link_prediction - [131/659]
+19:30:39 - INFO - eval_link_prediction - [262/659]
+19:30:41 - INFO - eval_link_prediction - [393/659]
+19:30:43 - INFO - eval_link_prediction - [524/659]
+19:30:44 - INFO - eval_link_prediction - [655/659]
+19:30:44 - INFO - eval_link_prediction - valid mrr: 0.0578  hits@1: 0.0295  hits@3: 0.0550  hits@10: 0.1059  
+19:30:45 - INFO - link_prediction - Epoch 2/40 [0/3360]: 0.101983
+19:30:56 - INFO - link_prediction - Epoch 2/40 [168/3360]: 0.097028
+19:31:08 - INFO - link_prediction - Epoch 2/40 [336/3360]: 0.099570
+19:31:20 - INFO - link_prediction - Epoch 2/40 [504/3360]: 0.073564
+19:31:31 - INFO - link_prediction - Epoch 2/40 [672/3360]: 0.085712
+19:31:43 - INFO - link_prediction - Epoch 2/40 [840/3360]: 0.079969
+19:31:55 - INFO - link_prediction - Epoch 2/40 [1008/3360]: 0.065831
+19:32:06 - INFO - link_prediction - Epoch 2/40 [1176/3360]: 0.100869
+19:32:18 - INFO - link_prediction - Epoch 2/40 [1344/3360]: 0.087608
+19:32:29 - INFO - link_prediction - Epoch 2/40 [1512/3360]: 0.072516
+19:32:41 - INFO - link_prediction - Epoch 2/40 [1680/3360]: 0.103146
+19:32:53 - INFO - link_prediction - Epoch 2/40 [1848/3360]: 0.093694
+19:33:04 - INFO - link_prediction - Epoch 2/40 [2016/3360]: 0.083177
+19:33:16 - INFO - link_prediction - Epoch 2/40 [2184/3360]: 0.105544
+19:33:28 - INFO - link_prediction - Epoch 2/40 [2352/3360]: 0.054943
+19:33:39 - INFO - link_prediction - Epoch 2/40 [2520/3360]: 0.054389
+19:33:51 - INFO - link_prediction - Epoch 2/40 [2688/3360]: 0.072209
+19:34:03 - INFO - link_prediction - Epoch 2/40 [2856/3360]: 0.067396
+19:34:14 - INFO - link_prediction - Epoch 2/40 [3024/3360]: 0.098256
+19:34:26 - INFO - link_prediction - Epoch 2/40 [3192/3360]: 0.091049
+19:34:37 - INFO - link_prediction - Evaluating on sample of training set
+19:34:38 - INFO - eval_link_prediction - [2,560/11,633]
+19:34:40 - INFO - eval_link_prediction - [5,120/11,633]
+19:34:41 - INFO - eval_link_prediction - [7,680/11,633]
+19:34:42 - INFO - eval_link_prediction - [10,240/11,633]
+19:34:43 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:34:45 - INFO - eval_link_prediction - [131/659]
+19:34:46 - INFO - eval_link_prediction - [262/659]
+19:34:48 - INFO - eval_link_prediction - [393/659]
+19:34:49 - INFO - eval_link_prediction - [524/659]
+19:34:51 - INFO - eval_link_prediction - [655/659]
+19:34:51 - INFO - eval_link_prediction - train mrr: 0.0940  hits@1: 0.0448  hits@3: 0.0907  hits@10: 0.1880  
+19:34:51 - INFO - link_prediction - Evaluating on validation set
+19:34:52 - INFO - eval_link_prediction - [3,072/13,087]
+19:34:54 - INFO - eval_link_prediction - [6,144/13,087]
+19:34:55 - INFO - eval_link_prediction - [9,216/13,087]
+19:34:57 - INFO - eval_link_prediction - [12,288/13,087]
+19:34:57 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:34:59 - INFO - eval_link_prediction - [131/659]
+19:35:01 - INFO - eval_link_prediction - [262/659]
+19:35:03 - INFO - eval_link_prediction - [393/659]
+19:35:04 - INFO - eval_link_prediction - [524/659]
+19:35:06 - INFO - eval_link_prediction - [655/659]
+19:35:06 - INFO - eval_link_prediction - valid mrr: 0.0752  hits@1: 0.0389  hits@3: 0.0723  hits@10: 0.1387  
+19:35:06 - INFO - link_prediction - Epoch 3/40 [0/3360]: 0.071369
+19:35:18 - INFO - link_prediction - Epoch 3/40 [168/3360]: 0.072700
+19:35:30 - INFO - link_prediction - Epoch 3/40 [336/3360]: 0.081670
+19:35:41 - INFO - link_prediction - Epoch 3/40 [504/3360]: 0.073505
+19:35:53 - INFO - link_prediction - Epoch 3/40 [672/3360]: 0.057718
+19:36:05 - INFO - link_prediction - Epoch 3/40 [840/3360]: 0.073451
+19:36:16 - INFO - link_prediction - Epoch 3/40 [1008/3360]: 0.086313
+19:36:28 - INFO - link_prediction - Epoch 3/40 [1176/3360]: 0.047521
+19:36:39 - INFO - link_prediction - Epoch 3/40 [1344/3360]: 0.070086
+19:36:51 - INFO - link_prediction - Epoch 3/40 [1512/3360]: 0.068634
+19:37:03 - INFO - link_prediction - Epoch 3/40 [1680/3360]: 0.078339
+19:37:14 - INFO - link_prediction - Epoch 3/40 [1848/3360]: 0.058625
+19:37:26 - INFO - link_prediction - Epoch 3/40 [2016/3360]: 0.052277
+19:37:38 - INFO - link_prediction - Epoch 3/40 [2184/3360]: 0.063663
+19:37:49 - INFO - link_prediction - Epoch 3/40 [2352/3360]: 0.049827
+19:38:01 - INFO - link_prediction - Epoch 3/40 [2520/3360]: 0.039842
+19:38:13 - INFO - link_prediction - Epoch 3/40 [2688/3360]: 0.056837
+19:38:24 - INFO - link_prediction - Epoch 3/40 [2856/3360]: 0.060265
+19:38:36 - INFO - link_prediction - Epoch 3/40 [3024/3360]: 0.054081
+19:38:47 - INFO - link_prediction - Epoch 3/40 [3192/3360]: 0.045263
+19:38:59 - INFO - link_prediction - Evaluating on sample of training set
+19:39:00 - INFO - eval_link_prediction - [2,560/11,633]
+19:39:01 - INFO - eval_link_prediction - [5,120/11,633]
+19:39:03 - INFO - eval_link_prediction - [7,680/11,633]
+19:39:04 - INFO - eval_link_prediction - [10,240/11,633]
+19:39:05 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:39:06 - INFO - eval_link_prediction - [131/659]
+19:39:08 - INFO - eval_link_prediction - [262/659]
+19:39:09 - INFO - eval_link_prediction - [393/659]
+19:39:11 - INFO - eval_link_prediction - [524/659]
+19:39:12 - INFO - eval_link_prediction - [655/659]
+19:39:12 - INFO - eval_link_prediction - train mrr: 0.1138  hits@1: 0.0579  hits@3: 0.1143  hits@10: 0.2227  
+19:39:12 - INFO - link_prediction - Evaluating on validation set
+19:39:14 - INFO - eval_link_prediction - [3,072/13,087]
+19:39:15 - INFO - eval_link_prediction - [6,144/13,087]
+19:39:17 - INFO - eval_link_prediction - [9,216/13,087]
+19:39:19 - INFO - eval_link_prediction - [12,288/13,087]
+19:39:19 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:39:21 - INFO - eval_link_prediction - [131/659]
+19:39:23 - INFO - eval_link_prediction - [262/659]
+19:39:24 - INFO - eval_link_prediction - [393/659]
+19:39:26 - INFO - eval_link_prediction - [524/659]
+19:39:28 - INFO - eval_link_prediction - [655/659]
+19:39:28 - INFO - eval_link_prediction - valid mrr: 0.0886  hits@1: 0.0460  hits@3: 0.0865  hits@10: 0.1663  
+19:39:28 - INFO - link_prediction - Epoch 4/40 [0/3360]: 0.083314
+19:39:40 - INFO - link_prediction - Epoch 4/40 [168/3360]: 0.057132
+19:39:51 - INFO - link_prediction - Epoch 4/40 [336/3360]: 0.060198
+19:40:03 - INFO - link_prediction - Epoch 4/40 [504/3360]: 0.049761
+19:40:15 - INFO - link_prediction - Epoch 4/40 [672/3360]: 0.055762
+19:40:26 - INFO - link_prediction - Epoch 4/40 [840/3360]: 0.049237
+19:40:38 - INFO - link_prediction - Epoch 4/40 [1008/3360]: 0.058007
+19:40:50 - INFO - link_prediction - Epoch 4/40 [1176/3360]: 0.043952
+19:41:01 - INFO - link_prediction - Epoch 4/40 [1344/3360]: 0.051017
+19:41:13 - INFO - link_prediction - Epoch 4/40 [1512/3360]: 0.048733
+19:41:24 - INFO - link_prediction - Epoch 4/40 [1680/3360]: 0.067715
+19:41:36 - INFO - link_prediction - Epoch 4/40 [1848/3360]: 0.050728
+19:41:48 - INFO - link_prediction - Epoch 4/40 [2016/3360]: 0.043886
+19:41:59 - INFO - link_prediction - Epoch 4/40 [2184/3360]: 0.049424
+19:42:11 - INFO - link_prediction - Epoch 4/40 [2352/3360]: 0.062259
+19:42:23 - INFO - link_prediction - Epoch 4/40 [2520/3360]: 0.083807
+19:42:34 - INFO - link_prediction - Epoch 4/40 [2688/3360]: 0.077222
+19:42:46 - INFO - link_prediction - Epoch 4/40 [2856/3360]: 0.052416
+19:42:58 - INFO - link_prediction - Epoch 4/40 [3024/3360]: 0.065611
+19:43:09 - INFO - link_prediction - Epoch 4/40 [3192/3360]: 0.041769
+19:43:21 - INFO - link_prediction - Evaluating on sample of training set
+19:43:22 - INFO - eval_link_prediction - [2,560/11,633]
+19:43:23 - INFO - eval_link_prediction - [5,120/11,633]
+19:43:24 - INFO - eval_link_prediction - [7,680/11,633]
+19:43:26 - INFO - eval_link_prediction - [10,240/11,633]
+19:43:26 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:43:28 - INFO - eval_link_prediction - [131/659]
+19:43:30 - INFO - eval_link_prediction - [262/659]
+19:43:31 - INFO - eval_link_prediction - [393/659]
+19:43:33 - INFO - eval_link_prediction - [524/659]
+19:43:34 - INFO - eval_link_prediction - [655/659]
+19:43:34 - INFO - eval_link_prediction - train mrr: 0.1168  hits@1: 0.0587  hits@3: 0.1176  hits@10: 0.2311  
+19:43:34 - INFO - link_prediction - Evaluating on validation set
+19:43:35 - INFO - eval_link_prediction - [3,072/13,087]
+19:43:37 - INFO - eval_link_prediction - [6,144/13,087]
+19:43:39 - INFO - eval_link_prediction - [9,216/13,087]
+19:43:40 - INFO - eval_link_prediction - [12,288/13,087]
+19:43:41 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:43:43 - INFO - eval_link_prediction - [131/659]
+19:43:44 - INFO - eval_link_prediction - [262/659]
+19:43:46 - INFO - eval_link_prediction - [393/659]
+19:43:48 - INFO - eval_link_prediction - [524/659]
+19:43:49 - INFO - eval_link_prediction - [655/659]
+19:43:49 - INFO - eval_link_prediction - valid mrr: 0.0951  hits@1: 0.0506  hits@3: 0.0931  hits@10: 0.1774  
+19:43:50 - INFO - link_prediction - Epoch 5/40 [0/3360]: 0.068813
+19:44:01 - INFO - link_prediction - Epoch 5/40 [168/3360]: 0.048463
+19:44:13 - INFO - link_prediction - Epoch 5/40 [336/3360]: 0.041884
+19:44:25 - INFO - link_prediction - Epoch 5/40 [504/3360]: 0.050639
+19:44:36 - INFO - link_prediction - Epoch 5/40 [672/3360]: 0.079506
+19:44:48 - INFO - link_prediction - Epoch 5/40 [840/3360]: 0.053595
+19:45:00 - INFO - link_prediction - Epoch 5/40 [1008/3360]: 0.055294
+19:45:11 - INFO - link_prediction - Epoch 5/40 [1176/3360]: 0.052086
+19:45:23 - INFO - link_prediction - Epoch 5/40 [1344/3360]: 0.057735
+19:45:34 - INFO - link_prediction - Epoch 5/40 [1512/3360]: 0.058341
+19:45:46 - INFO - link_prediction - Epoch 5/40 [1680/3360]: 0.053632
+19:45:58 - INFO - link_prediction - Epoch 5/40 [1848/3360]: 0.067041
+19:46:09 - INFO - link_prediction - Epoch 5/40 [2016/3360]: 0.053237
+19:46:21 - INFO - link_prediction - Epoch 5/40 [2184/3360]: 0.043654
+19:46:33 - INFO - link_prediction - Epoch 5/40 [2352/3360]: 0.052462
+19:46:44 - INFO - link_prediction - Epoch 5/40 [2520/3360]: 0.048483
+19:46:56 - INFO - link_prediction - Epoch 5/40 [2688/3360]: 0.060718
+19:47:07 - INFO - link_prediction - Epoch 5/40 [2856/3360]: 0.049907
+19:47:19 - INFO - link_prediction - Epoch 5/40 [3024/3360]: 0.058857
+19:47:31 - INFO - link_prediction - Epoch 5/40 [3192/3360]: 0.060696
+19:47:42 - INFO - link_prediction - Evaluating on sample of training set
+19:47:43 - INFO - eval_link_prediction - [2,560/11,633]
+19:47:45 - INFO - eval_link_prediction - [5,120/11,633]
+19:47:46 - INFO - eval_link_prediction - [7,680/11,633]
+19:47:47 - INFO - eval_link_prediction - [10,240/11,633]
+19:47:48 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:47:50 - INFO - eval_link_prediction - [131/659]
+19:47:51 - INFO - eval_link_prediction - [262/659]
+19:47:53 - INFO - eval_link_prediction - [393/659]
+19:47:54 - INFO - eval_link_prediction - [524/659]
+19:47:56 - INFO - eval_link_prediction - [655/659]
+19:47:56 - INFO - eval_link_prediction - train mrr: 0.1220  hits@1: 0.0614  hits@3: 0.1224  hits@10: 0.2422  
+19:47:56 - INFO - link_prediction - Evaluating on validation set
+19:47:57 - INFO - eval_link_prediction - [3,072/13,087]
+19:47:59 - INFO - eval_link_prediction - [6,144/13,087]
+19:48:00 - INFO - eval_link_prediction - [9,216/13,087]
+19:48:02 - INFO - eval_link_prediction - [12,288/13,087]
+19:48:02 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:48:04 - INFO - eval_link_prediction - [131/659]
+19:48:06 - INFO - eval_link_prediction - [262/659]
+19:48:08 - INFO - eval_link_prediction - [393/659]
+19:48:09 - INFO - eval_link_prediction - [524/659]
+19:48:11 - INFO - eval_link_prediction - [655/659]
+19:48:11 - INFO - eval_link_prediction - valid mrr: 0.0969  hits@1: 0.0497  hits@3: 0.0965  hits@10: 0.1843  
+19:48:11 - INFO - link_prediction - Epoch 6/40 [0/3360]: 0.055545
+19:48:23 - INFO - link_prediction - Epoch 6/40 [168/3360]: 0.067718
+19:48:35 - INFO - link_prediction - Epoch 6/40 [336/3360]: 0.065276
+19:48:46 - INFO - link_prediction - Epoch 6/40 [504/3360]: 0.050524
+19:48:58 - INFO - link_prediction - Epoch 6/40 [672/3360]: 0.044043
+19:49:10 - INFO - link_prediction - Epoch 6/40 [840/3360]: 0.037950
+19:49:21 - INFO - link_prediction - Epoch 6/40 [1008/3360]: 0.042056
+19:49:33 - INFO - link_prediction - Epoch 6/40 [1176/3360]: 0.054984
+19:49:44 - INFO - link_prediction - Epoch 6/40 [1344/3360]: 0.042300
+19:49:56 - INFO - link_prediction - Epoch 6/40 [1512/3360]: 0.044533
+19:50:08 - INFO - link_prediction - Epoch 6/40 [1680/3360]: 0.056536
+19:50:19 - INFO - link_prediction - Epoch 6/40 [1848/3360]: 0.050002
+19:50:31 - INFO - link_prediction - Epoch 6/40 [2016/3360]: 0.076401
+19:50:43 - INFO - link_prediction - Epoch 6/40 [2184/3360]: 0.034900
+19:50:54 - INFO - link_prediction - Epoch 6/40 [2352/3360]: 0.042831
+19:51:06 - INFO - link_prediction - Epoch 6/40 [2520/3360]: 0.062426
+19:51:17 - INFO - link_prediction - Epoch 6/40 [2688/3360]: 0.054789
+19:51:29 - INFO - link_prediction - Epoch 6/40 [2856/3360]: 0.083836
+19:51:41 - INFO - link_prediction - Epoch 6/40 [3024/3360]: 0.050557
+19:51:52 - INFO - link_prediction - Epoch 6/40 [3192/3360]: 0.045421
+19:52:04 - INFO - link_prediction - Evaluating on sample of training set
+19:52:05 - INFO - eval_link_prediction - [2,560/11,633]
+19:52:06 - INFO - eval_link_prediction - [5,120/11,633]
+19:52:08 - INFO - eval_link_prediction - [7,680/11,633]
+19:52:09 - INFO - eval_link_prediction - [10,240/11,633]
+19:52:10 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:52:11 - INFO - eval_link_prediction - [131/659]
+19:52:13 - INFO - eval_link_prediction - [262/659]
+19:52:14 - INFO - eval_link_prediction - [393/659]
+19:52:16 - INFO - eval_link_prediction - [524/659]
+19:52:17 - INFO - eval_link_prediction - [655/659]
+19:52:17 - INFO - eval_link_prediction - train mrr: 0.1207  hits@1: 0.0604  hits@3: 0.1229  hits@10: 0.2385  
+19:52:17 - INFO - link_prediction - Evaluating on validation set
+19:52:19 - INFO - eval_link_prediction - [3,072/13,087]
+19:52:20 - INFO - eval_link_prediction - [6,144/13,087]
+19:52:22 - INFO - eval_link_prediction - [9,216/13,087]
+19:52:23 - INFO - eval_link_prediction - [12,288/13,087]
+19:52:24 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:52:26 - INFO - eval_link_prediction - [131/659]
+19:52:27 - INFO - eval_link_prediction - [262/659]
+19:52:29 - INFO - eval_link_prediction - [393/659]
+19:52:31 - INFO - eval_link_prediction - [524/659]
+19:52:33 - INFO - eval_link_prediction - [655/659]
+19:52:33 - INFO - eval_link_prediction - valid mrr: 0.0983  hits@1: 0.0535  hits@3: 0.0960  hits@10: 0.1812  
+19:52:33 - INFO - link_prediction - Epoch 7/40 [0/3360]: 0.067962
+19:52:45 - INFO - link_prediction - Epoch 7/40 [168/3360]: 0.035913
+19:52:56 - INFO - link_prediction - Epoch 7/40 [336/3360]: 0.067277
+19:53:08 - INFO - link_prediction - Epoch 7/40 [504/3360]: 0.041557
+19:53:19 - INFO - link_prediction - Epoch 7/40 [672/3360]: 0.057817
+19:53:31 - INFO - link_prediction - Epoch 7/40 [840/3360]: 0.049722
+19:53:43 - INFO - link_prediction - Epoch 7/40 [1008/3360]: 0.039043
+19:53:54 - INFO - link_prediction - Epoch 7/40 [1176/3360]: 0.053491
+19:54:06 - INFO - link_prediction - Epoch 7/40 [1344/3360]: 0.052083
+19:54:18 - INFO - link_prediction - Epoch 7/40 [1512/3360]: 0.049200
+19:54:29 - INFO - link_prediction - Epoch 7/40 [1680/3360]: 0.049184
+19:54:41 - INFO - link_prediction - Epoch 7/40 [1848/3360]: 0.036014
+19:54:52 - INFO - link_prediction - Epoch 7/40 [2016/3360]: 0.058625
+19:55:04 - INFO - link_prediction - Epoch 7/40 [2184/3360]: 0.053629
+19:55:16 - INFO - link_prediction - Epoch 7/40 [2352/3360]: 0.040640
+19:55:27 - INFO - link_prediction - Epoch 7/40 [2520/3360]: 0.052349
+19:55:39 - INFO - link_prediction - Epoch 7/40 [2688/3360]: 0.060849
+19:55:51 - INFO - link_prediction - Epoch 7/40 [2856/3360]: 0.044488
+19:56:02 - INFO - link_prediction - Epoch 7/40 [3024/3360]: 0.056767
+19:56:14 - INFO - link_prediction - Epoch 7/40 [3192/3360]: 0.051713
+19:56:26 - INFO - link_prediction - Evaluating on sample of training set
+19:56:27 - INFO - eval_link_prediction - [2,560/11,633]
+19:56:28 - INFO - eval_link_prediction - [5,120/11,633]
+19:56:29 - INFO - eval_link_prediction - [7,680/11,633]
+19:56:30 - INFO - eval_link_prediction - [10,240/11,633]
+19:56:31 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:56:33 - INFO - eval_link_prediction - [131/659]
+19:56:34 - INFO - eval_link_prediction - [262/659]
+19:56:36 - INFO - eval_link_prediction - [393/659]
+19:56:37 - INFO - eval_link_prediction - [524/659]
+19:56:39 - INFO - eval_link_prediction - [655/659]
+19:56:39 - INFO - eval_link_prediction - train mrr: 0.1172  hits@1: 0.0580  hits@3: 0.1177  hits@10: 0.2322  
+19:56:39 - INFO - link_prediction - Evaluating on validation set
+19:56:40 - INFO - eval_link_prediction - [3,072/13,087]
+19:56:42 - INFO - eval_link_prediction - [6,144/13,087]
+19:56:43 - INFO - eval_link_prediction - [9,216/13,087]
+19:56:45 - INFO - eval_link_prediction - [12,288/13,087]
+19:56:46 - INFO - eval_link_prediction - Computing metrics on set of triples
+19:56:47 - INFO - eval_link_prediction - [131/659]
+19:56:49 - INFO - eval_link_prediction - [262/659]
+19:56:51 - INFO - eval_link_prediction - [393/659]
+19:56:52 - INFO - eval_link_prediction - [524/659]
+19:56:54 - INFO - eval_link_prediction - [655/659]
+19:56:54 - INFO - eval_link_prediction - valid mrr: 0.0958  hits@1: 0.0511  hits@3: 0.0936  hits@10: 0.1787  
+19:56:54 - INFO - link_prediction - Epoch 8/40 [0/3360]: 0.065501
+19:57:06 - INFO - link_prediction - Epoch 8/40 [168/3360]: 0.063020
+19:57:18 - INFO - link_prediction - Epoch 8/40 [336/3360]: 0.060898
+19:57:29 - INFO - link_prediction - Epoch 8/40 [504/3360]: 0.086810
+19:57:41 - INFO - link_prediction - Epoch 8/40 [672/3360]: 0.043580
+19:57:52 - INFO - link_prediction - Epoch 8/40 [840/3360]: 0.039868
+19:58:04 - INFO - link_prediction - Epoch 8/40 [1008/3360]: 0.047168
+19:58:16 - INFO - link_prediction - Epoch 8/40 [1176/3360]: 0.047837
+19:58:27 - INFO - link_prediction - Epoch 8/40 [1344/3360]: 0.045584
+19:58:39 - INFO - link_prediction - Epoch 8/40 [1512/3360]: 0.066916
+19:58:51 - INFO - link_prediction - Epoch 8/40 [1680/3360]: 0.038618
+19:59:02 - INFO - link_prediction - Epoch 8/40 [1848/3360]: 0.078913
+19:59:14 - INFO - link_prediction - Epoch 8/40 [2016/3360]: 0.053127
+19:59:25 - INFO - link_prediction - Epoch 8/40 [2184/3360]: 0.054422
+19:59:37 - INFO - link_prediction - Epoch 8/40 [2352/3360]: 0.066857
+19:59:49 - INFO - link_prediction - Epoch 8/40 [2520/3360]: 0.040635
+20:00:00 - INFO - link_prediction - Epoch 8/40 [2688/3360]: 0.047180
+20:00:12 - INFO - link_prediction - Epoch 8/40 [2856/3360]: 0.078056
+20:00:24 - INFO - link_prediction - Epoch 8/40 [3024/3360]: 0.067892
+20:00:35 - INFO - link_prediction - Epoch 8/40 [3192/3360]: 0.045307
+20:00:47 - INFO - link_prediction - Evaluating on sample of training set
+20:00:48 - INFO - eval_link_prediction - [2,560/11,633]
+20:00:49 - INFO - eval_link_prediction - [5,120/11,633]
+20:00:51 - INFO - eval_link_prediction - [7,680/11,633]
+20:00:52 - INFO - eval_link_prediction - [10,240/11,633]
+20:00:53 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:00:54 - INFO - eval_link_prediction - [131/659]
+20:00:56 - INFO - eval_link_prediction - [262/659]
+20:00:57 - INFO - eval_link_prediction - [393/659]
+20:00:59 - INFO - eval_link_prediction - [524/659]
+20:01:00 - INFO - eval_link_prediction - [655/659]
+20:01:00 - INFO - eval_link_prediction - train mrr: 0.1146  hits@1: 0.0560  hits@3: 0.1132  hits@10: 0.2279  
+20:01:00 - INFO - link_prediction - Evaluating on validation set
+20:01:02 - INFO - eval_link_prediction - [3,072/13,087]
+20:01:03 - INFO - eval_link_prediction - [6,144/13,087]
+20:01:05 - INFO - eval_link_prediction - [9,216/13,087]
+20:01:06 - INFO - eval_link_prediction - [12,288/13,087]
+20:01:07 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:01:09 - INFO - eval_link_prediction - [131/659]
+20:01:10 - INFO - eval_link_prediction - [262/659]
+20:01:12 - INFO - eval_link_prediction - [393/659]
+20:01:14 - INFO - eval_link_prediction - [524/659]
+20:01:15 - INFO - eval_link_prediction - [655/659]
+20:01:16 - INFO - eval_link_prediction - valid mrr: 0.0917  hits@1: 0.0462  hits@3: 0.0911  hits@10: 0.1735  
+20:01:16 - INFO - link_prediction - Epoch 9/40 [0/3360]: 0.045852
+20:01:27 - INFO - link_prediction - Epoch 9/40 [168/3360]: 0.037105
+20:01:39 - INFO - link_prediction - Epoch 9/40 [336/3360]: 0.066800
+20:01:50 - INFO - link_prediction - Epoch 9/40 [504/3360]: 0.065396
+20:02:02 - INFO - link_prediction - Epoch 9/40 [672/3360]: 0.051678
+20:02:14 - INFO - link_prediction - Epoch 9/40 [840/3360]: 0.049795
+20:02:25 - INFO - link_prediction - Epoch 9/40 [1008/3360]: 0.065044
+20:02:37 - INFO - link_prediction - Epoch 9/40 [1176/3360]: 0.045548
+20:02:49 - INFO - link_prediction - Epoch 9/40 [1344/3360]: 0.038358
+20:03:00 - INFO - link_prediction - Epoch 9/40 [1512/3360]: 0.045746
+20:03:12 - INFO - link_prediction - Epoch 9/40 [1680/3360]: 0.053307
+20:03:24 - INFO - link_prediction - Epoch 9/40 [1848/3360]: 0.073611
+20:03:35 - INFO - link_prediction - Epoch 9/40 [2016/3360]: 0.048309
+20:03:47 - INFO - link_prediction - Epoch 9/40 [2184/3360]: 0.056374
+20:03:58 - INFO - link_prediction - Epoch 9/40 [2352/3360]: 0.079764
+20:04:10 - INFO - link_prediction - Epoch 9/40 [2520/3360]: 0.047803
+20:04:22 - INFO - link_prediction - Epoch 9/40 [2688/3360]: 0.047769
+20:04:33 - INFO - link_prediction - Epoch 9/40 [2856/3360]: 0.036112
+20:04:45 - INFO - link_prediction - Epoch 9/40 [3024/3360]: 0.065807
+20:04:57 - INFO - link_prediction - Epoch 9/40 [3192/3360]: 0.035300
+20:05:08 - INFO - link_prediction - Evaluating on sample of training set
+20:05:09 - INFO - eval_link_prediction - [2,560/11,633]
+20:05:11 - INFO - eval_link_prediction - [5,120/11,633]
+20:05:12 - INFO - eval_link_prediction - [7,680/11,633]
+20:05:13 - INFO - eval_link_prediction - [10,240/11,633]
+20:05:14 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:05:16 - INFO - eval_link_prediction - [131/659]
+20:05:17 - INFO - eval_link_prediction - [262/659]
+20:05:19 - INFO - eval_link_prediction - [393/659]
+20:05:20 - INFO - eval_link_prediction - [524/659]
+20:05:22 - INFO - eval_link_prediction - [655/659]
+20:05:22 - INFO - eval_link_prediction - train mrr: 0.1144  hits@1: 0.0557  hits@3: 0.1131  hits@10: 0.2300  
+20:05:22 - INFO - link_prediction - Evaluating on validation set
+20:05:23 - INFO - eval_link_prediction - [3,072/13,087]
+20:05:25 - INFO - eval_link_prediction - [6,144/13,087]
+20:05:26 - INFO - eval_link_prediction - [9,216/13,087]
+20:05:28 - INFO - eval_link_prediction - [12,288/13,087]
+20:05:28 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:05:30 - INFO - eval_link_prediction - [131/659]
+20:05:32 - INFO - eval_link_prediction - [262/659]
+20:05:33 - INFO - eval_link_prediction - [393/659]
+20:05:35 - INFO - eval_link_prediction - [524/659]
+20:05:37 - INFO - eval_link_prediction - [655/659]
+20:05:37 - INFO - eval_link_prediction - valid mrr: 0.0943  hits@1: 0.0491  hits@3: 0.0928  hits@10: 0.1767  
+20:05:37 - INFO - link_prediction - Epoch 10/40 [0/3360]: 0.051383
+20:05:49 - INFO - link_prediction - Epoch 10/40 [168/3360]: 0.052997
+20:06:00 - INFO - link_prediction - Epoch 10/40 [336/3360]: 0.050028
+20:06:12 - INFO - link_prediction - Epoch 10/40 [504/3360]: 0.047054
+20:06:23 - INFO - link_prediction - Epoch 10/40 [672/3360]: 0.048977
+20:06:35 - INFO - link_prediction - Epoch 10/40 [840/3360]: 0.069915
+20:06:47 - INFO - link_prediction - Epoch 10/40 [1008/3360]: 0.043818
+20:06:58 - INFO - link_prediction - Epoch 10/40 [1176/3360]: 0.056342
+20:07:10 - INFO - link_prediction - Epoch 10/40 [1344/3360]: 0.053559
+20:07:22 - INFO - link_prediction - Epoch 10/40 [1512/3360]: 0.046737
+20:07:33 - INFO - link_prediction - Epoch 10/40 [1680/3360]: 0.045545
+20:07:45 - INFO - link_prediction - Epoch 10/40 [1848/3360]: 0.048155
+20:07:57 - INFO - link_prediction - Epoch 10/40 [2016/3360]: 0.045461
+20:08:08 - INFO - link_prediction - Epoch 10/40 [2184/3360]: 0.032240
+20:08:20 - INFO - link_prediction - Epoch 10/40 [2352/3360]: 0.057178
+20:08:31 - INFO - link_prediction - Epoch 10/40 [2520/3360]: 0.053273
+20:08:43 - INFO - link_prediction - Epoch 10/40 [2688/3360]: 0.062364
+20:08:55 - INFO - link_prediction - Epoch 10/40 [2856/3360]: 0.071618
+20:09:06 - INFO - link_prediction - Epoch 10/40 [3024/3360]: 0.060184
+20:09:18 - INFO - link_prediction - Epoch 10/40 [3192/3360]: 0.056082
+20:09:30 - INFO - link_prediction - Evaluating on sample of training set
+20:09:31 - INFO - eval_link_prediction - [2,560/11,633]
+20:09:32 - INFO - eval_link_prediction - [5,120/11,633]
+20:09:33 - INFO - eval_link_prediction - [7,680/11,633]
+20:09:35 - INFO - eval_link_prediction - [10,240/11,633]
+20:09:35 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:09:37 - INFO - eval_link_prediction - [131/659]
+20:09:38 - INFO - eval_link_prediction - [262/659]
+20:09:40 - INFO - eval_link_prediction - [393/659]
+20:09:41 - INFO - eval_link_prediction - [524/659]
+20:09:43 - INFO - eval_link_prediction - [655/659]
+20:09:43 - INFO - eval_link_prediction - train mrr: 0.1238  hits@1: 0.0617  hits@3: 0.1252  hits@10: 0.2443  
+20:09:43 - INFO - link_prediction - Evaluating on validation set
+20:09:44 - INFO - eval_link_prediction - [3,072/13,087]
+20:09:46 - INFO - eval_link_prediction - [6,144/13,087]
+20:09:47 - INFO - eval_link_prediction - [9,216/13,087]
+20:09:49 - INFO - eval_link_prediction - [12,288/13,087]
+20:09:50 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:09:51 - INFO - eval_link_prediction - [131/659]
+20:09:53 - INFO - eval_link_prediction - [262/659]
+20:09:55 - INFO - eval_link_prediction - [393/659]
+20:09:56 - INFO - eval_link_prediction - [524/659]
+20:09:58 - INFO - eval_link_prediction - [655/659]
+20:09:58 - INFO - eval_link_prediction - valid mrr: 0.0987  hits@1: 0.0526  hits@3: 0.0972  hits@10: 0.1847  
+20:09:59 - INFO - link_prediction - Epoch 11/40 [0/3360]: 0.054614
+20:10:10 - INFO - link_prediction - Epoch 11/40 [168/3360]: 0.055822
+20:10:22 - INFO - link_prediction - Epoch 11/40 [336/3360]: 0.050378
+20:10:33 - INFO - link_prediction - Epoch 11/40 [504/3360]: 0.039647
+20:10:45 - INFO - link_prediction - Epoch 11/40 [672/3360]: 0.054817
+20:10:57 - INFO - link_prediction - Epoch 11/40 [840/3360]: 0.063485
+20:11:08 - INFO - link_prediction - Epoch 11/40 [1008/3360]: 0.060485
+20:11:20 - INFO - link_prediction - Epoch 11/40 [1176/3360]: 0.065254
+20:11:32 - INFO - link_prediction - Epoch 11/40 [1344/3360]: 0.055944
+20:11:43 - INFO - link_prediction - Epoch 11/40 [1512/3360]: 0.045041
+20:11:55 - INFO - link_prediction - Epoch 11/40 [1680/3360]: 0.057278
+20:12:07 - INFO - link_prediction - Epoch 11/40 [1848/3360]: 0.036670
+20:12:18 - INFO - link_prediction - Epoch 11/40 [2016/3360]: 0.060763
+20:12:30 - INFO - link_prediction - Epoch 11/40 [2184/3360]: 0.053589
+20:12:41 - INFO - link_prediction - Epoch 11/40 [2352/3360]: 0.075247
+20:12:53 - INFO - link_prediction - Epoch 11/40 [2520/3360]: 0.054287
+20:13:05 - INFO - link_prediction - Epoch 11/40 [2688/3360]: 0.043988
+20:13:16 - INFO - link_prediction - Epoch 11/40 [2856/3360]: 0.078865
+20:13:28 - INFO - link_prediction - Epoch 11/40 [3024/3360]: 0.043446
+20:13:40 - INFO - link_prediction - Epoch 11/40 [3192/3360]: 0.048494
+20:13:51 - INFO - link_prediction - Evaluating on sample of training set
+20:13:52 - INFO - eval_link_prediction - [2,560/11,633]
+20:13:54 - INFO - eval_link_prediction - [5,120/11,633]
+20:13:55 - INFO - eval_link_prediction - [7,680/11,633]
+20:13:56 - INFO - eval_link_prediction - [10,240/11,633]
+20:13:57 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:13:59 - INFO - eval_link_prediction - [131/659]
+20:14:00 - INFO - eval_link_prediction - [262/659]
+20:14:02 - INFO - eval_link_prediction - [393/659]
+20:14:03 - INFO - eval_link_prediction - [524/659]
+20:14:05 - INFO - eval_link_prediction - [655/659]
+20:14:05 - INFO - eval_link_prediction - train mrr: 0.1216  hits@1: 0.0593  hits@3: 0.1229  hits@10: 0.2429  
+20:14:05 - INFO - link_prediction - Evaluating on validation set
+20:14:06 - INFO - eval_link_prediction - [3,072/13,087]
+20:14:08 - INFO - eval_link_prediction - [6,144/13,087]
+20:14:09 - INFO - eval_link_prediction - [9,216/13,087]
+20:14:11 - INFO - eval_link_prediction - [12,288/13,087]
+20:14:11 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:14:13 - INFO - eval_link_prediction - [131/659]
+20:14:15 - INFO - eval_link_prediction - [262/659]
+20:14:16 - INFO - eval_link_prediction - [393/659]
+20:14:18 - INFO - eval_link_prediction - [524/659]
+20:14:20 - INFO - eval_link_prediction - [655/659]
+20:14:20 - INFO - eval_link_prediction - valid mrr: 0.0980  hits@1: 0.0517  hits@3: 0.0967  hits@10: 0.1846  
+20:14:20 - INFO - link_prediction - Epoch 12/40 [0/3360]: 0.036934
+20:14:32 - INFO - link_prediction - Epoch 12/40 [168/3360]: 0.050722
+20:14:43 - INFO - link_prediction - Epoch 12/40 [336/3360]: 0.036891
+20:14:55 - INFO - link_prediction - Epoch 12/40 [504/3360]: 0.042512
+20:15:06 - INFO - link_prediction - Epoch 12/40 [672/3360]: 0.043769
+20:15:18 - INFO - link_prediction - Epoch 12/40 [840/3360]: 0.051330
+20:15:30 - INFO - link_prediction - Epoch 12/40 [1008/3360]: 0.061751
+20:15:41 - INFO - link_prediction - Epoch 12/40 [1176/3360]: 0.027846
+20:15:53 - INFO - link_prediction - Epoch 12/40 [1344/3360]: 0.040346
+20:16:05 - INFO - link_prediction - Epoch 12/40 [1512/3360]: 0.054053
+20:16:16 - INFO - link_prediction - Epoch 12/40 [1680/3360]: 0.057983
+20:16:28 - INFO - link_prediction - Epoch 12/40 [1848/3360]: 0.059349
+20:16:40 - INFO - link_prediction - Epoch 12/40 [2016/3360]: 0.067630
+20:16:51 - INFO - link_prediction - Epoch 12/40 [2184/3360]: 0.040812
+20:17:03 - INFO - link_prediction - Epoch 12/40 [2352/3360]: 0.059907
+20:17:14 - INFO - link_prediction - Epoch 12/40 [2520/3360]: 0.056515
+20:17:26 - INFO - link_prediction - Epoch 12/40 [2688/3360]: 0.025909
+20:17:38 - INFO - link_prediction - Epoch 12/40 [2856/3360]: 0.049758
+20:17:49 - INFO - link_prediction - Epoch 12/40 [3024/3360]: 0.050715
+20:18:01 - INFO - link_prediction - Epoch 12/40 [3192/3360]: 0.053404
+20:18:13 - INFO - link_prediction - Evaluating on sample of training set
+20:18:14 - INFO - eval_link_prediction - [2,560/11,633]
+20:18:15 - INFO - eval_link_prediction - [5,120/11,633]
+20:18:16 - INFO - eval_link_prediction - [7,680/11,633]
+20:18:18 - INFO - eval_link_prediction - [10,240/11,633]
+20:18:18 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:18:20 - INFO - eval_link_prediction - [131/659]
+20:18:22 - INFO - eval_link_prediction - [262/659]
+20:18:23 - INFO - eval_link_prediction - [393/659]
+20:18:25 - INFO - eval_link_prediction - [524/659]
+20:18:26 - INFO - eval_link_prediction - [655/659]
+20:18:26 - INFO - eval_link_prediction - train mrr: 0.1224  hits@1: 0.0611  hits@3: 0.1216  hits@10: 0.2426  
+20:18:26 - INFO - link_prediction - Evaluating on validation set
+20:18:27 - INFO - eval_link_prediction - [3,072/13,087]
+20:18:29 - INFO - eval_link_prediction - [6,144/13,087]
+20:18:31 - INFO - eval_link_prediction - [9,216/13,087]
+20:18:32 - INFO - eval_link_prediction - [12,288/13,087]
+20:18:33 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:18:34 - INFO - eval_link_prediction - [131/659]
+20:18:36 - INFO - eval_link_prediction - [262/659]
+20:18:38 - INFO - eval_link_prediction - [393/659]
+20:18:40 - INFO - eval_link_prediction - [524/659]
+20:18:41 - INFO - eval_link_prediction - [655/659]
+20:18:41 - INFO - eval_link_prediction - valid mrr: 0.0993  hits@1: 0.0531  hits@3: 0.0981  hits@10: 0.1845  
+20:18:42 - INFO - link_prediction - Epoch 13/40 [0/3360]: 0.047966
+20:18:53 - INFO - link_prediction - Epoch 13/40 [168/3360]: 0.046290
+20:19:05 - INFO - link_prediction - Epoch 13/40 [336/3360]: 0.078636
+20:19:16 - INFO - link_prediction - Epoch 13/40 [504/3360]: 0.042026
+20:19:28 - INFO - link_prediction - Epoch 13/40 [672/3360]: 0.047276
+20:19:40 - INFO - link_prediction - Epoch 13/40 [840/3360]: 0.060154
+20:19:51 - INFO - link_prediction - Epoch 13/40 [1008/3360]: 0.041209
+20:20:03 - INFO - link_prediction - Epoch 13/40 [1176/3360]: 0.033568
+20:20:15 - INFO - link_prediction - Epoch 13/40 [1344/3360]: 0.049994
+20:20:26 - INFO - link_prediction - Epoch 13/40 [1512/3360]: 0.042364
+20:20:38 - INFO - link_prediction - Epoch 13/40 [1680/3360]: 0.052146
+20:20:50 - INFO - link_prediction - Epoch 13/40 [1848/3360]: 0.050598
+20:21:01 - INFO - link_prediction - Epoch 13/40 [2016/3360]: 0.032736
+20:21:13 - INFO - link_prediction - Epoch 13/40 [2184/3360]: 0.047005
+20:21:24 - INFO - link_prediction - Epoch 13/40 [2352/3360]: 0.056868
+20:21:36 - INFO - link_prediction - Epoch 13/40 [2520/3360]: 0.044145
+20:21:48 - INFO - link_prediction - Epoch 13/40 [2688/3360]: 0.051974
+20:21:59 - INFO - link_prediction - Epoch 13/40 [2856/3360]: 0.048048
+20:22:11 - INFO - link_prediction - Epoch 13/40 [3024/3360]: 0.046478
+20:22:23 - INFO - link_prediction - Epoch 13/40 [3192/3360]: 0.047030
+20:22:34 - INFO - link_prediction - Evaluating on sample of training set
+20:22:35 - INFO - eval_link_prediction - [2,560/11,633]
+20:22:36 - INFO - eval_link_prediction - [5,120/11,633]
+20:22:38 - INFO - eval_link_prediction - [7,680/11,633]
+20:22:39 - INFO - eval_link_prediction - [10,240/11,633]
+20:22:40 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:22:42 - INFO - eval_link_prediction - [131/659]
+20:22:43 - INFO - eval_link_prediction - [262/659]
+20:22:45 - INFO - eval_link_prediction - [393/659]
+20:22:46 - INFO - eval_link_prediction - [524/659]
+20:22:48 - INFO - eval_link_prediction - [655/659]
+20:22:48 - INFO - eval_link_prediction - train mrr: 0.1252  hits@1: 0.0612  hits@3: 0.1261  hits@10: 0.2511  
+20:22:48 - INFO - link_prediction - Evaluating on validation set
+20:22:49 - INFO - eval_link_prediction - [3,072/13,087]
+20:22:51 - INFO - eval_link_prediction - [6,144/13,087]
+20:22:52 - INFO - eval_link_prediction - [9,216/13,087]
+20:22:54 - INFO - eval_link_prediction - [12,288/13,087]
+20:22:54 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:22:56 - INFO - eval_link_prediction - [131/659]
+20:22:58 - INFO - eval_link_prediction - [262/659]
+20:22:59 - INFO - eval_link_prediction - [393/659]
+20:23:01 - INFO - eval_link_prediction - [524/659]
+20:23:03 - INFO - eval_link_prediction - [655/659]
+20:23:03 - INFO - eval_link_prediction - valid mrr: 0.0990  hits@1: 0.0523  hits@3: 0.0979  hits@10: 0.1851  
+20:23:03 - INFO - link_prediction - Epoch 14/40 [0/3360]: 0.035399
+20:23:15 - INFO - link_prediction - Epoch 14/40 [168/3360]: 0.029552
+20:23:26 - INFO - link_prediction - Epoch 14/40 [336/3360]: 0.022725
+20:23:38 - INFO - link_prediction - Epoch 14/40 [504/3360]: 0.059316
+20:23:49 - INFO - link_prediction - Epoch 14/40 [672/3360]: 0.068663
+20:24:01 - INFO - link_prediction - Epoch 14/40 [840/3360]: 0.047616
+20:24:13 - INFO - link_prediction - Epoch 14/40 [1008/3360]: 0.040725
+20:24:24 - INFO - link_prediction - Epoch 14/40 [1176/3360]: 0.069396
+20:24:36 - INFO - link_prediction - Epoch 14/40 [1344/3360]: 0.055342
+20:24:48 - INFO - link_prediction - Epoch 14/40 [1512/3360]: 0.041761
+20:24:59 - INFO - link_prediction - Epoch 14/40 [1680/3360]: 0.043164
+20:25:11 - INFO - link_prediction - Epoch 14/40 [1848/3360]: 0.044961
+20:25:22 - INFO - link_prediction - Epoch 14/40 [2016/3360]: 0.048348
+20:25:35 - INFO - link_prediction - Epoch 14/40 [2184/3360]: 0.057839
+20:25:46 - INFO - link_prediction - Epoch 14/40 [2352/3360]: 0.045329
+20:25:58 - INFO - link_prediction - Epoch 14/40 [2520/3360]: 0.045652
+20:26:10 - INFO - link_prediction - Epoch 14/40 [2688/3360]: 0.054379
+20:26:21 - INFO - link_prediction - Epoch 14/40 [2856/3360]: 0.058094
+20:26:33 - INFO - link_prediction - Epoch 14/40 [3024/3360]: 0.030022
+20:26:44 - INFO - link_prediction - Epoch 14/40 [3192/3360]: 0.051667
+20:26:56 - INFO - link_prediction - Evaluating on sample of training set
+20:26:57 - INFO - eval_link_prediction - [2,560/11,633]
+20:26:58 - INFO - eval_link_prediction - [5,120/11,633]
+20:27:00 - INFO - eval_link_prediction - [7,680/11,633]
+20:27:01 - INFO - eval_link_prediction - [10,240/11,633]
+20:27:02 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:27:03 - INFO - eval_link_prediction - [131/659]
+20:27:05 - INFO - eval_link_prediction - [262/659]
+20:27:06 - INFO - eval_link_prediction - [393/659]
+20:27:08 - INFO - eval_link_prediction - [524/659]
+20:27:09 - INFO - eval_link_prediction - [655/659]
+20:27:10 - INFO - eval_link_prediction - train mrr: 0.1208  hits@1: 0.0586  hits@3: 0.1191  hits@10: 0.2437  
+20:27:10 - INFO - link_prediction - Evaluating on validation set
+20:27:11 - INFO - eval_link_prediction - [3,072/13,087]
+20:27:12 - INFO - eval_link_prediction - [6,144/13,087]
+20:27:14 - INFO - eval_link_prediction - [9,216/13,087]
+20:27:16 - INFO - eval_link_prediction - [12,288/13,087]
+20:27:16 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:27:18 - INFO - eval_link_prediction - [131/659]
+20:27:20 - INFO - eval_link_prediction - [262/659]
+20:27:21 - INFO - eval_link_prediction - [393/659]
+20:27:23 - INFO - eval_link_prediction - [524/659]
+20:27:25 - INFO - eval_link_prediction - [655/659]
+20:27:25 - INFO - eval_link_prediction - valid mrr: 0.0998  hits@1: 0.0519  hits@3: 0.0992  hits@10: 0.1896  
+20:27:25 - INFO - link_prediction - Epoch 15/40 [0/3360]: 0.048381
+20:27:37 - INFO - link_prediction - Epoch 15/40 [168/3360]: 0.042814
+20:27:48 - INFO - link_prediction - Epoch 15/40 [336/3360]: 0.042978
+20:28:00 - INFO - link_prediction - Epoch 15/40 [504/3360]: 0.043055
+20:28:12 - INFO - link_prediction - Epoch 15/40 [672/3360]: 0.030211
+20:28:23 - INFO - link_prediction - Epoch 15/40 [840/3360]: 0.047798
+20:28:35 - INFO - link_prediction - Epoch 15/40 [1008/3360]: 0.040957
+20:28:46 - INFO - link_prediction - Epoch 15/40 [1176/3360]: 0.056213
+20:28:58 - INFO - link_prediction - Epoch 15/40 [1344/3360]: 0.048721
+20:29:10 - INFO - link_prediction - Epoch 15/40 [1512/3360]: 0.056143
+20:29:21 - INFO - link_prediction - Epoch 15/40 [1680/3360]: 0.025789
+20:29:33 - INFO - link_prediction - Epoch 15/40 [1848/3360]: 0.038478
+20:29:45 - INFO - link_prediction - Epoch 15/40 [2016/3360]: 0.037175
+20:29:56 - INFO - link_prediction - Epoch 15/40 [2184/3360]: 0.063251
+20:30:08 - INFO - link_prediction - Epoch 15/40 [2352/3360]: 0.046934
+20:30:19 - INFO - link_prediction - Epoch 15/40 [2520/3360]: 0.055620
+20:30:31 - INFO - link_prediction - Epoch 15/40 [2688/3360]: 0.039611
+20:30:43 - INFO - link_prediction - Epoch 15/40 [2856/3360]: 0.047690
+20:30:54 - INFO - link_prediction - Epoch 15/40 [3024/3360]: 0.058566
+20:31:07 - INFO - link_prediction - Epoch 15/40 [3192/3360]: 0.045360
+20:31:24 - INFO - link_prediction - Evaluating on sample of training set
+20:31:26 - INFO - eval_link_prediction - [2,560/11,633]
+20:31:27 - INFO - eval_link_prediction - [5,120/11,633]
+20:31:29 - INFO - eval_link_prediction - [7,680/11,633]
+20:31:30 - INFO - eval_link_prediction - [10,240/11,633]
+20:31:31 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:31:33 - INFO - eval_link_prediction - [131/659]
+20:31:34 - INFO - eval_link_prediction - [262/659]
+20:31:36 - INFO - eval_link_prediction - [393/659]
+20:31:37 - INFO - eval_link_prediction - [524/659]
+20:31:39 - INFO - eval_link_prediction - [655/659]
+20:31:39 - INFO - eval_link_prediction - train mrr: 0.1290  hits@1: 0.0650  hits@3: 0.1303  hits@10: 0.2538  
+20:31:39 - INFO - link_prediction - Evaluating on validation set
+20:31:40 - INFO - eval_link_prediction - [3,072/13,087]
+20:31:41 - INFO - eval_link_prediction - [6,144/13,087]
+20:31:43 - INFO - eval_link_prediction - [9,216/13,087]
+20:31:45 - INFO - eval_link_prediction - [12,288/13,087]
+20:31:45 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:31:47 - INFO - eval_link_prediction - [131/659]
+20:31:49 - INFO - eval_link_prediction - [262/659]
+20:31:50 - INFO - eval_link_prediction - [393/659]
+20:31:52 - INFO - eval_link_prediction - [524/659]
+20:31:54 - INFO - eval_link_prediction - [655/659]
+20:31:54 - INFO - eval_link_prediction - valid mrr: 0.0996  hits@1: 0.0512  hits@3: 0.0989  hits@10: 0.1901  
+20:31:54 - INFO - link_prediction - Epoch 16/40 [0/3360]: 0.038989
+20:32:06 - INFO - link_prediction - Epoch 16/40 [168/3360]: 0.046192
+20:32:17 - INFO - link_prediction - Epoch 16/40 [336/3360]: 0.068839
+20:32:29 - INFO - link_prediction - Epoch 16/40 [504/3360]: 0.039961
+20:32:40 - INFO - link_prediction - Epoch 16/40 [672/3360]: 0.054051
+20:32:52 - INFO - link_prediction - Epoch 16/40 [840/3360]: 0.036659
+20:33:04 - INFO - link_prediction - Epoch 16/40 [1008/3360]: 0.058505
+20:33:15 - INFO - link_prediction - Epoch 16/40 [1176/3360]: 0.053634
+20:33:27 - INFO - link_prediction - Epoch 16/40 [1344/3360]: 0.054472
+20:33:39 - INFO - link_prediction - Epoch 16/40 [1512/3360]: 0.050891
+20:33:50 - INFO - link_prediction - Epoch 16/40 [1680/3360]: 0.033707
+20:34:02 - INFO - link_prediction - Epoch 16/40 [1848/3360]: 0.041260
+20:34:13 - INFO - link_prediction - Epoch 16/40 [2016/3360]: 0.058478
+20:34:25 - INFO - link_prediction - Epoch 16/40 [2184/3360]: 0.041222
+20:34:37 - INFO - link_prediction - Epoch 16/40 [2352/3360]: 0.054778
+20:34:48 - INFO - link_prediction - Epoch 16/40 [2520/3360]: 0.031768
+20:35:00 - INFO - link_prediction - Epoch 16/40 [2688/3360]: 0.037098
+20:35:12 - INFO - link_prediction - Epoch 16/40 [2856/3360]: 0.070397
+20:35:23 - INFO - link_prediction - Epoch 16/40 [3024/3360]: 0.043342
+20:35:35 - INFO - link_prediction - Epoch 16/40 [3192/3360]: 0.033201
+20:35:46 - INFO - link_prediction - Evaluating on sample of training set
+20:35:48 - INFO - eval_link_prediction - [2,560/11,633]
+20:35:49 - INFO - eval_link_prediction - [5,120/11,633]
+20:35:50 - INFO - eval_link_prediction - [7,680/11,633]
+20:35:51 - INFO - eval_link_prediction - [10,240/11,633]
+20:35:52 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:35:54 - INFO - eval_link_prediction - [131/659]
+20:35:55 - INFO - eval_link_prediction - [262/659]
+20:35:57 - INFO - eval_link_prediction - [393/659]
+20:35:58 - INFO - eval_link_prediction - [524/659]
+20:36:00 - INFO - eval_link_prediction - [655/659]
+20:36:00 - INFO - eval_link_prediction - train mrr: 0.1274  hits@1: 0.0626  hits@3: 0.1274  hits@10: 0.2562  
+20:36:00 - INFO - link_prediction - Evaluating on validation set
+20:36:01 - INFO - eval_link_prediction - [3,072/13,087]
+20:36:03 - INFO - eval_link_prediction - [6,144/13,087]
+20:36:04 - INFO - eval_link_prediction - [9,216/13,087]
+20:36:06 - INFO - eval_link_prediction - [12,288/13,087]
+20:36:06 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:36:08 - INFO - eval_link_prediction - [131/659]
+20:36:10 - INFO - eval_link_prediction - [262/659]
+20:36:12 - INFO - eval_link_prediction - [393/659]
+20:36:13 - INFO - eval_link_prediction - [524/659]
+20:36:15 - INFO - eval_link_prediction - [655/659]
+20:36:15 - INFO - eval_link_prediction - valid mrr: 0.1026  hits@1: 0.0545  hits@3: 0.1018  hits@10: 0.1938  
+20:36:16 - INFO - link_prediction - Epoch 17/40 [0/3360]: 0.048204
+20:36:28 - INFO - link_prediction - Epoch 17/40 [168/3360]: 0.043748
+20:36:40 - INFO - link_prediction - Epoch 17/40 [336/3360]: 0.041409
+20:36:51 - INFO - link_prediction - Epoch 17/40 [504/3360]: 0.037141
+20:37:03 - INFO - link_prediction - Epoch 17/40 [672/3360]: 0.036028
+20:37:14 - INFO - link_prediction - Epoch 17/40 [840/3360]: 0.053577
+20:37:26 - INFO - link_prediction - Epoch 17/40 [1008/3360]: 0.050271
+20:37:38 - INFO - link_prediction - Epoch 17/40 [1176/3360]: 0.043589
+20:37:49 - INFO - link_prediction - Epoch 17/40 [1344/3360]: 0.053908
+20:38:01 - INFO - link_prediction - Epoch 17/40 [1512/3360]: 0.027378
+20:38:13 - INFO - link_prediction - Epoch 17/40 [1680/3360]: 0.053218
+20:38:24 - INFO - link_prediction - Epoch 17/40 [1848/3360]: 0.038601
+20:38:36 - INFO - link_prediction - Epoch 17/40 [2016/3360]: 0.026377
+20:38:47 - INFO - link_prediction - Epoch 17/40 [2184/3360]: 0.044352
+20:38:59 - INFO - link_prediction - Epoch 17/40 [2352/3360]: 0.040470
+20:39:11 - INFO - link_prediction - Epoch 17/40 [2520/3360]: 0.039798
+20:39:22 - INFO - link_prediction - Epoch 17/40 [2688/3360]: 0.034916
+20:39:34 - INFO - link_prediction - Epoch 17/40 [2856/3360]: 0.044363
+20:39:46 - INFO - link_prediction - Epoch 17/40 [3024/3360]: 0.033160
+20:39:57 - INFO - link_prediction - Epoch 17/40 [3192/3360]: 0.036632
+20:40:09 - INFO - link_prediction - Evaluating on sample of training set
+20:40:10 - INFO - eval_link_prediction - [2,560/11,633]
+20:40:11 - INFO - eval_link_prediction - [5,120/11,633]
+20:40:12 - INFO - eval_link_prediction - [7,680/11,633]
+20:40:14 - INFO - eval_link_prediction - [10,240/11,633]
+20:40:15 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:40:16 - INFO - eval_link_prediction - [131/659]
+20:40:18 - INFO - eval_link_prediction - [262/659]
+20:40:19 - INFO - eval_link_prediction - [393/659]
+20:40:21 - INFO - eval_link_prediction - [524/659]
+20:40:22 - INFO - eval_link_prediction - [655/659]
+20:40:22 - INFO - eval_link_prediction - train mrr: 0.1279  hits@1: 0.0638  hits@3: 0.1279  hits@10: 0.2534  
+20:40:22 - INFO - link_prediction - Evaluating on validation set
+20:40:24 - INFO - eval_link_prediction - [3,072/13,087]
+20:40:25 - INFO - eval_link_prediction - [6,144/13,087]
+20:40:27 - INFO - eval_link_prediction - [9,216/13,087]
+20:40:28 - INFO - eval_link_prediction - [12,288/13,087]
+20:40:29 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:40:31 - INFO - eval_link_prediction - [131/659]
+20:40:32 - INFO - eval_link_prediction - [262/659]
+20:40:34 - INFO - eval_link_prediction - [393/659]
+20:40:36 - INFO - eval_link_prediction - [524/659]
+20:40:37 - INFO - eval_link_prediction - [655/659]
+20:40:37 - INFO - eval_link_prediction - valid mrr: 0.1016  hits@1: 0.0543  hits@3: 0.0996  hits@10: 0.1909  
+20:40:38 - INFO - link_prediction - Epoch 18/40 [0/3360]: 0.034239
+20:40:49 - INFO - link_prediction - Epoch 18/40 [168/3360]: 0.047734
+20:41:01 - INFO - link_prediction - Epoch 18/40 [336/3360]: 0.035031
+20:41:12 - INFO - link_prediction - Epoch 18/40 [504/3360]: 0.053953
+20:41:24 - INFO - link_prediction - Epoch 18/40 [672/3360]: 0.031784
+20:41:36 - INFO - link_prediction - Epoch 18/40 [840/3360]: 0.032241
+20:41:47 - INFO - link_prediction - Epoch 18/40 [1008/3360]: 0.032837
+20:41:59 - INFO - link_prediction - Epoch 18/40 [1176/3360]: 0.040086
+20:42:11 - INFO - link_prediction - Epoch 18/40 [1344/3360]: 0.025974
+20:42:22 - INFO - link_prediction - Epoch 18/40 [1512/3360]: 0.039922
+20:42:34 - INFO - link_prediction - Epoch 18/40 [1680/3360]: 0.047315
+20:42:45 - INFO - link_prediction - Epoch 18/40 [1848/3360]: 0.043922
+20:42:57 - INFO - link_prediction - Epoch 18/40 [2016/3360]: 0.063388
+20:43:09 - INFO - link_prediction - Epoch 18/40 [2184/3360]: 0.050973
+20:43:20 - INFO - link_prediction - Epoch 18/40 [2352/3360]: 0.034243
+20:43:32 - INFO - link_prediction - Epoch 18/40 [2520/3360]: 0.035589
+20:43:44 - INFO - link_prediction - Epoch 18/40 [2688/3360]: 0.048513
+20:43:55 - INFO - link_prediction - Epoch 18/40 [2856/3360]: 0.039639
+20:44:07 - INFO - link_prediction - Epoch 18/40 [3024/3360]: 0.027063
+20:44:19 - INFO - link_prediction - Epoch 18/40 [3192/3360]: 0.035524
+20:44:30 - INFO - link_prediction - Evaluating on sample of training set
+20:44:31 - INFO - eval_link_prediction - [2,560/11,633]
+20:44:32 - INFO - eval_link_prediction - [5,120/11,633]
+20:44:34 - INFO - eval_link_prediction - [7,680/11,633]
+20:44:35 - INFO - eval_link_prediction - [10,240/11,633]
+20:44:36 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:44:38 - INFO - eval_link_prediction - [131/659]
+20:44:39 - INFO - eval_link_prediction - [262/659]
+20:44:41 - INFO - eval_link_prediction - [393/659]
+20:44:42 - INFO - eval_link_prediction - [524/659]
+20:44:44 - INFO - eval_link_prediction - [655/659]
+20:44:44 - INFO - eval_link_prediction - train mrr: 0.1290  hits@1: 0.0630  hits@3: 0.1290  hits@10: 0.2603  
+20:44:44 - INFO - link_prediction - Evaluating on validation set
+20:44:45 - INFO - eval_link_prediction - [3,072/13,087]
+20:44:46 - INFO - eval_link_prediction - [6,144/13,087]
+20:44:48 - INFO - eval_link_prediction - [9,216/13,087]
+20:44:50 - INFO - eval_link_prediction - [12,288/13,087]
+20:44:50 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:44:52 - INFO - eval_link_prediction - [131/659]
+20:44:54 - INFO - eval_link_prediction - [262/659]
+20:44:55 - INFO - eval_link_prediction - [393/659]
+20:44:57 - INFO - eval_link_prediction - [524/659]
+20:44:59 - INFO - eval_link_prediction - [655/659]
+20:44:59 - INFO - eval_link_prediction - valid mrr: 0.1046  hits@1: 0.0552  hits@3: 0.1040  hits@10: 0.1975  
+20:44:59 - INFO - link_prediction - Epoch 19/40 [0/3360]: 0.027859
+20:45:11 - INFO - link_prediction - Epoch 19/40 [168/3360]: 0.038920
+20:45:22 - INFO - link_prediction - Epoch 19/40 [336/3360]: 0.036202
+20:45:34 - INFO - link_prediction - Epoch 19/40 [504/3360]: 0.045407
+20:45:46 - INFO - link_prediction - Epoch 19/40 [672/3360]: 0.049509
+20:45:57 - INFO - link_prediction - Epoch 19/40 [840/3360]: 0.044710
+20:46:09 - INFO - link_prediction - Epoch 19/40 [1008/3360]: 0.053677
+20:46:20 - INFO - link_prediction - Epoch 19/40 [1176/3360]: 0.040203
+20:46:32 - INFO - link_prediction - Epoch 19/40 [1344/3360]: 0.050141
+20:46:44 - INFO - link_prediction - Epoch 19/40 [1512/3360]: 0.052329
+20:46:55 - INFO - link_prediction - Epoch 19/40 [1680/3360]: 0.042232
+20:47:07 - INFO - link_prediction - Epoch 19/40 [1848/3360]: 0.049073
+20:47:19 - INFO - link_prediction - Epoch 19/40 [2016/3360]: 0.040547
+20:47:30 - INFO - link_prediction - Epoch 19/40 [2184/3360]: 0.046362
+20:47:42 - INFO - link_prediction - Epoch 19/40 [2352/3360]: 0.059427
+20:47:54 - INFO - link_prediction - Epoch 19/40 [2520/3360]: 0.056223
+20:48:05 - INFO - link_prediction - Epoch 19/40 [2688/3360]: 0.025153
+20:48:17 - INFO - link_prediction - Epoch 19/40 [2856/3360]: 0.039507
+20:48:28 - INFO - link_prediction - Epoch 19/40 [3024/3360]: 0.031471
+20:48:40 - INFO - link_prediction - Epoch 19/40 [3192/3360]: 0.038638
+20:48:52 - INFO - link_prediction - Evaluating on sample of training set
+20:48:53 - INFO - eval_link_prediction - [2,560/11,633]
+20:48:54 - INFO - eval_link_prediction - [5,120/11,633]
+20:48:55 - INFO - eval_link_prediction - [7,680/11,633]
+20:48:57 - INFO - eval_link_prediction - [10,240/11,633]
+20:48:57 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:48:59 - INFO - eval_link_prediction - [131/659]
+20:49:01 - INFO - eval_link_prediction - [262/659]
+20:49:02 - INFO - eval_link_prediction - [393/659]
+20:49:04 - INFO - eval_link_prediction - [524/659]
+20:49:05 - INFO - eval_link_prediction - [655/659]
+20:49:05 - INFO - eval_link_prediction - train mrr: 0.1291  hits@1: 0.0645  hits@3: 0.1289  hits@10: 0.2549  
+20:49:05 - INFO - link_prediction - Evaluating on validation set
+20:49:06 - INFO - eval_link_prediction - [3,072/13,087]
+20:49:08 - INFO - eval_link_prediction - [6,144/13,087]
+20:49:10 - INFO - eval_link_prediction - [9,216/13,087]
+20:49:11 - INFO - eval_link_prediction - [12,288/13,087]
+20:49:12 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:49:13 - INFO - eval_link_prediction - [131/659]
+20:49:15 - INFO - eval_link_prediction - [262/659]
+20:49:17 - INFO - eval_link_prediction - [393/659]
+20:49:19 - INFO - eval_link_prediction - [524/659]
+20:49:20 - INFO - eval_link_prediction - [655/659]
+20:49:20 - INFO - eval_link_prediction - valid mrr: 0.1012  hits@1: 0.0537  hits@3: 0.1000  hits@10: 0.1892  
+20:49:20 - INFO - link_prediction - Epoch 20/40 [0/3360]: 0.035945
+20:49:32 - INFO - link_prediction - Epoch 20/40 [168/3360]: 0.038437
+20:49:44 - INFO - link_prediction - Epoch 20/40 [336/3360]: 0.042182
+20:49:55 - INFO - link_prediction - Epoch 20/40 [504/3360]: 0.033288
+20:50:07 - INFO - link_prediction - Epoch 20/40 [672/3360]: 0.050369
+20:50:19 - INFO - link_prediction - Epoch 20/40 [840/3360]: 0.043185
+20:50:30 - INFO - link_prediction - Epoch 20/40 [1008/3360]: 0.044959
+20:50:42 - INFO - link_prediction - Epoch 20/40 [1176/3360]: 0.036072
+20:50:53 - INFO - link_prediction - Epoch 20/40 [1344/3360]: 0.048723
+20:51:05 - INFO - link_prediction - Epoch 20/40 [1512/3360]: 0.046335
+20:51:17 - INFO - link_prediction - Epoch 20/40 [1680/3360]: 0.045979
+20:51:28 - INFO - link_prediction - Epoch 20/40 [1848/3360]: 0.044994
+20:51:40 - INFO - link_prediction - Epoch 20/40 [2016/3360]: 0.046969
+20:51:52 - INFO - link_prediction - Epoch 20/40 [2184/3360]: 0.030998
+20:52:03 - INFO - link_prediction - Epoch 20/40 [2352/3360]: 0.056305
+20:52:15 - INFO - link_prediction - Epoch 20/40 [2520/3360]: 0.044677
+20:52:26 - INFO - link_prediction - Epoch 20/40 [2688/3360]: 0.040408
+20:52:38 - INFO - link_prediction - Epoch 20/40 [2856/3360]: 0.041465
+20:52:50 - INFO - link_prediction - Epoch 20/40 [3024/3360]: 0.038633
+20:53:01 - INFO - link_prediction - Epoch 20/40 [3192/3360]: 0.066189
+20:53:13 - INFO - link_prediction - Evaluating on sample of training set
+20:53:14 - INFO - eval_link_prediction - [2,560/11,633]
+20:53:15 - INFO - eval_link_prediction - [5,120/11,633]
+20:53:17 - INFO - eval_link_prediction - [7,680/11,633]
+20:53:18 - INFO - eval_link_prediction - [10,240/11,633]
+20:53:19 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:53:20 - INFO - eval_link_prediction - [131/659]
+20:53:22 - INFO - eval_link_prediction - [262/659]
+20:53:23 - INFO - eval_link_prediction - [393/659]
+20:53:25 - INFO - eval_link_prediction - [524/659]
+20:53:26 - INFO - eval_link_prediction - [655/659]
+20:53:26 - INFO - eval_link_prediction - train mrr: 0.1288  hits@1: 0.0628  hits@3: 0.1283  hits@10: 0.2601  
+20:53:26 - INFO - link_prediction - Evaluating on validation set
+20:53:28 - INFO - eval_link_prediction - [3,072/13,087]
+20:53:29 - INFO - eval_link_prediction - [6,144/13,087]
+20:53:31 - INFO - eval_link_prediction - [9,216/13,087]
+20:53:32 - INFO - eval_link_prediction - [12,288/13,087]
+20:53:33 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:53:35 - INFO - eval_link_prediction - [131/659]
+20:53:36 - INFO - eval_link_prediction - [262/659]
+20:53:38 - INFO - eval_link_prediction - [393/659]
+20:53:40 - INFO - eval_link_prediction - [524/659]
+20:53:42 - INFO - eval_link_prediction - [655/659]
+20:53:42 - INFO - eval_link_prediction - valid mrr: 0.1016  hits@1: 0.0538  hits@3: 0.1006  hits@10: 0.1920  
+20:53:42 - INFO - link_prediction - Epoch 21/40 [0/3360]: 0.036448
+20:53:53 - INFO - link_prediction - Epoch 21/40 [168/3360]: 0.054611
+20:54:05 - INFO - link_prediction - Epoch 21/40 [336/3360]: 0.047155
+20:54:17 - INFO - link_prediction - Epoch 21/40 [504/3360]: 0.026247
+20:54:28 - INFO - link_prediction - Epoch 21/40 [672/3360]: 0.063498
+20:54:40 - INFO - link_prediction - Epoch 21/40 [840/3360]: 0.048916
+20:54:51 - INFO - link_prediction - Epoch 21/40 [1008/3360]: 0.052009
+20:55:03 - INFO - link_prediction - Epoch 21/40 [1176/3360]: 0.038003
+20:55:15 - INFO - link_prediction - Epoch 21/40 [1344/3360]: 0.046761
+20:55:26 - INFO - link_prediction - Epoch 21/40 [1512/3360]: 0.037090
+20:55:38 - INFO - link_prediction - Epoch 21/40 [1680/3360]: 0.046180
+20:55:50 - INFO - link_prediction - Epoch 21/40 [1848/3360]: 0.031749
+20:56:01 - INFO - link_prediction - Epoch 21/40 [2016/3360]: 0.027331
+20:56:13 - INFO - link_prediction - Epoch 21/40 [2184/3360]: 0.030705
+20:56:24 - INFO - link_prediction - Epoch 21/40 [2352/3360]: 0.032102
+20:56:36 - INFO - link_prediction - Epoch 21/40 [2520/3360]: 0.055798
+20:56:48 - INFO - link_prediction - Epoch 21/40 [2688/3360]: 0.048169
+20:56:59 - INFO - link_prediction - Epoch 21/40 [2856/3360]: 0.024521
+20:57:11 - INFO - link_prediction - Epoch 21/40 [3024/3360]: 0.039348
+20:57:23 - INFO - link_prediction - Epoch 21/40 [3192/3360]: 0.030107
+20:57:34 - INFO - link_prediction - Evaluating on sample of training set
+20:57:35 - INFO - eval_link_prediction - [2,560/11,633]
+20:57:37 - INFO - eval_link_prediction - [5,120/11,633]
+20:57:38 - INFO - eval_link_prediction - [7,680/11,633]
+20:57:39 - INFO - eval_link_prediction - [10,240/11,633]
+20:57:40 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:57:42 - INFO - eval_link_prediction - [131/659]
+20:57:43 - INFO - eval_link_prediction - [262/659]
+20:57:45 - INFO - eval_link_prediction - [393/659]
+20:57:46 - INFO - eval_link_prediction - [524/659]
+20:57:48 - INFO - eval_link_prediction - [655/659]
+20:57:48 - INFO - eval_link_prediction - train mrr: 0.1328  hits@1: 0.0648  hits@3: 0.1360  hits@10: 0.2663  
+20:57:48 - INFO - link_prediction - Evaluating on validation set
+20:57:49 - INFO - eval_link_prediction - [3,072/13,087]
+20:57:51 - INFO - eval_link_prediction - [6,144/13,087]
+20:57:52 - INFO - eval_link_prediction - [9,216/13,087]
+20:57:54 - INFO - eval_link_prediction - [12,288/13,087]
+20:57:54 - INFO - eval_link_prediction - Computing metrics on set of triples
+20:57:56 - INFO - eval_link_prediction - [131/659]
+20:57:58 - INFO - eval_link_prediction - [262/659]
+20:57:59 - INFO - eval_link_prediction - [393/659]
+20:58:01 - INFO - eval_link_prediction - [524/659]
+20:58:03 - INFO - eval_link_prediction - [655/659]
+20:58:03 - INFO - eval_link_prediction - valid mrr: 0.1045  hits@1: 0.0548  hits@3: 0.1050  hits@10: 0.1986  
+20:58:03 - INFO - link_prediction - Epoch 22/40 [0/3360]: 0.057867
+20:58:15 - INFO - link_prediction - Epoch 22/40 [168/3360]: 0.043416
+20:58:26 - INFO - link_prediction - Epoch 22/40 [336/3360]: 0.025836
+20:58:38 - INFO - link_prediction - Epoch 22/40 [504/3360]: 0.028117
+20:58:49 - INFO - link_prediction - Epoch 22/40 [672/3360]: 0.033677
+20:59:01 - INFO - link_prediction - Epoch 22/40 [840/3360]: 0.038586
+20:59:13 - INFO - link_prediction - Epoch 22/40 [1008/3360]: 0.030508
+20:59:24 - INFO - link_prediction - Epoch 22/40 [1176/3360]: 0.043014
+20:59:36 - INFO - link_prediction - Epoch 22/40 [1344/3360]: 0.038333
+20:59:48 - INFO - link_prediction - Epoch 22/40 [1512/3360]: 0.028401
+20:59:59 - INFO - link_prediction - Epoch 22/40 [1680/3360]: 0.040691
+21:00:11 - INFO - link_prediction - Epoch 22/40 [1848/3360]: 0.049584
+21:00:22 - INFO - link_prediction - Epoch 22/40 [2016/3360]: 0.046147
+21:00:34 - INFO - link_prediction - Epoch 22/40 [2184/3360]: 0.024105
+21:00:46 - INFO - link_prediction - Epoch 22/40 [2352/3360]: 0.033360
+21:00:57 - INFO - link_prediction - Epoch 22/40 [2520/3360]: 0.045224
+21:01:09 - INFO - link_prediction - Epoch 22/40 [2688/3360]: 0.045695
+21:01:21 - INFO - link_prediction - Epoch 22/40 [2856/3360]: 0.042935
+21:01:32 - INFO - link_prediction - Epoch 22/40 [3024/3360]: 0.034940
+21:01:44 - INFO - link_prediction - Epoch 22/40 [3192/3360]: 0.058435
+21:01:55 - INFO - link_prediction - Evaluating on sample of training set
+21:01:56 - INFO - eval_link_prediction - [2,560/11,633]
+21:01:58 - INFO - eval_link_prediction - [5,120/11,633]
+21:01:59 - INFO - eval_link_prediction - [7,680/11,633]
+21:02:00 - INFO - eval_link_prediction - [10,240/11,633]
+21:02:01 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:02:03 - INFO - eval_link_prediction - [131/659]
+21:02:04 - INFO - eval_link_prediction - [262/659]
+21:02:06 - INFO - eval_link_prediction - [393/659]
+21:02:07 - INFO - eval_link_prediction - [524/659]
+21:02:09 - INFO - eval_link_prediction - [655/659]
+21:02:09 - INFO - eval_link_prediction - train mrr: 0.1305  hits@1: 0.0619  hits@3: 0.1325  hits@10: 0.2661  
+21:02:09 - INFO - link_prediction - Evaluating on validation set
+21:02:10 - INFO - eval_link_prediction - [3,072/13,087]
+21:02:12 - INFO - eval_link_prediction - [6,144/13,087]
+21:02:13 - INFO - eval_link_prediction - [9,216/13,087]
+21:02:15 - INFO - eval_link_prediction - [12,288/13,087]
+21:02:15 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:02:17 - INFO - eval_link_prediction - [131/659]
+21:02:19 - INFO - eval_link_prediction - [262/659]
+21:02:21 - INFO - eval_link_prediction - [393/659]
+21:02:22 - INFO - eval_link_prediction - [524/659]
+21:02:24 - INFO - eval_link_prediction - [655/659]
+21:02:24 - INFO - eval_link_prediction - valid mrr: 0.1030  hits@1: 0.0538  hits@3: 0.1027  hits@10: 0.1956  
+21:02:24 - INFO - link_prediction - Epoch 23/40 [0/3360]: 0.050733
+21:02:36 - INFO - link_prediction - Epoch 23/40 [168/3360]: 0.034438
+21:02:47 - INFO - link_prediction - Epoch 23/40 [336/3360]: 0.027575
+21:02:59 - INFO - link_prediction - Epoch 23/40 [504/3360]: 0.040940
+21:03:11 - INFO - link_prediction - Epoch 23/40 [672/3360]: 0.033819
+21:03:22 - INFO - link_prediction - Epoch 23/40 [840/3360]: 0.050756
+21:03:34 - INFO - link_prediction - Epoch 23/40 [1008/3360]: 0.046699
+21:03:46 - INFO - link_prediction - Epoch 23/40 [1176/3360]: 0.029913
+21:03:57 - INFO - link_prediction - Epoch 23/40 [1344/3360]: 0.046412
+21:04:09 - INFO - link_prediction - Epoch 23/40 [1512/3360]: 0.048567
+21:04:20 - INFO - link_prediction - Epoch 23/40 [1680/3360]: 0.037587
+21:04:32 - INFO - link_prediction - Epoch 23/40 [1848/3360]: 0.041725
+21:04:44 - INFO - link_prediction - Epoch 23/40 [2016/3360]: 0.040771
+21:04:55 - INFO - link_prediction - Epoch 23/40 [2184/3360]: 0.039327
+21:05:07 - INFO - link_prediction - Epoch 23/40 [2352/3360]: 0.036426
+21:05:19 - INFO - link_prediction - Epoch 23/40 [2520/3360]: 0.033604
+21:05:30 - INFO - link_prediction - Epoch 23/40 [2688/3360]: 0.030432
+21:05:42 - INFO - link_prediction - Epoch 23/40 [2856/3360]: 0.050463
+21:05:53 - INFO - link_prediction - Epoch 23/40 [3024/3360]: 0.042868
+21:06:05 - INFO - link_prediction - Epoch 23/40 [3192/3360]: 0.047822
+21:06:17 - INFO - link_prediction - Evaluating on sample of training set
+21:06:18 - INFO - eval_link_prediction - [2,560/11,633]
+21:06:19 - INFO - eval_link_prediction - [5,120/11,633]
+21:06:20 - INFO - eval_link_prediction - [7,680/11,633]
+21:06:22 - INFO - eval_link_prediction - [10,240/11,633]
+21:06:22 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:06:24 - INFO - eval_link_prediction - [131/659]
+21:06:26 - INFO - eval_link_prediction - [262/659]
+21:06:27 - INFO - eval_link_prediction - [393/659]
+21:06:29 - INFO - eval_link_prediction - [524/659]
+21:06:30 - INFO - eval_link_prediction - [655/659]
+21:06:30 - INFO - eval_link_prediction - train mrr: 0.1294  hits@1: 0.0609  hits@3: 0.1309  hits@10: 0.2653  
+21:06:30 - INFO - link_prediction - Evaluating on validation set
+21:06:31 - INFO - eval_link_prediction - [3,072/13,087]
+21:06:33 - INFO - eval_link_prediction - [6,144/13,087]
+21:06:35 - INFO - eval_link_prediction - [9,216/13,087]
+21:06:36 - INFO - eval_link_prediction - [12,288/13,087]
+21:06:37 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:06:39 - INFO - eval_link_prediction - [131/659]
+21:06:40 - INFO - eval_link_prediction - [262/659]
+21:06:42 - INFO - eval_link_prediction - [393/659]
+21:06:44 - INFO - eval_link_prediction - [524/659]
+21:06:45 - INFO - eval_link_prediction - [655/659]
+21:06:45 - INFO - eval_link_prediction - valid mrr: 0.1031  hits@1: 0.0538  hits@3: 0.1037  hits@10: 0.1950  
+21:06:45 - INFO - link_prediction - Epoch 24/40 [0/3360]: 0.040019
+21:06:57 - INFO - link_prediction - Epoch 24/40 [168/3360]: 0.047700
+21:07:09 - INFO - link_prediction - Epoch 24/40 [336/3360]: 0.041067
+21:07:20 - INFO - link_prediction - Epoch 24/40 [504/3360]: 0.024740
+21:07:32 - INFO - link_prediction - Epoch 24/40 [672/3360]: 0.046489
+21:07:44 - INFO - link_prediction - Epoch 24/40 [840/3360]: 0.033254
+21:07:55 - INFO - link_prediction - Epoch 24/40 [1008/3360]: 0.034361
+21:08:07 - INFO - link_prediction - Epoch 24/40 [1176/3360]: 0.033204
+21:08:18 - INFO - link_prediction - Epoch 24/40 [1344/3360]: 0.032651
+21:08:30 - INFO - link_prediction - Epoch 24/40 [1512/3360]: 0.045804
+21:08:42 - INFO - link_prediction - Epoch 24/40 [1680/3360]: 0.040755
+21:08:53 - INFO - link_prediction - Epoch 24/40 [1848/3360]: 0.015363
+21:09:05 - INFO - link_prediction - Epoch 24/40 [2016/3360]: 0.040638
+21:09:17 - INFO - link_prediction - Epoch 24/40 [2184/3360]: 0.031501
+21:09:28 - INFO - link_prediction - Epoch 24/40 [2352/3360]: 0.030630
+21:09:40 - INFO - link_prediction - Epoch 24/40 [2520/3360]: 0.025826
+21:09:52 - INFO - link_prediction - Epoch 24/40 [2688/3360]: 0.036582
+21:10:03 - INFO - link_prediction - Epoch 24/40 [2856/3360]: 0.036685
+21:10:15 - INFO - link_prediction - Epoch 24/40 [3024/3360]: 0.042628
+21:10:26 - INFO - link_prediction - Epoch 24/40 [3192/3360]: 0.043764
+21:10:38 - INFO - link_prediction - Evaluating on sample of training set
+21:10:39 - INFO - eval_link_prediction - [2,560/11,633]
+21:10:40 - INFO - eval_link_prediction - [5,120/11,633]
+21:10:42 - INFO - eval_link_prediction - [7,680/11,633]
+21:10:43 - INFO - eval_link_prediction - [10,240/11,633]
+21:10:44 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:10:45 - INFO - eval_link_prediction - [131/659]
+21:10:47 - INFO - eval_link_prediction - [262/659]
+21:10:48 - INFO - eval_link_prediction - [393/659]
+21:10:50 - INFO - eval_link_prediction - [524/659]
+21:10:51 - INFO - eval_link_prediction - [655/659]
+21:10:52 - INFO - eval_link_prediction - train mrr: 0.1326  hits@1: 0.0650  hits@3: 0.1341  hits@10: 0.2663  
+21:10:52 - INFO - link_prediction - Evaluating on validation set
+21:10:53 - INFO - eval_link_prediction - [3,072/13,087]
+21:10:54 - INFO - eval_link_prediction - [6,144/13,087]
+21:10:56 - INFO - eval_link_prediction - [9,216/13,087]
+21:10:58 - INFO - eval_link_prediction - [12,288/13,087]
+21:10:58 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:11:00 - INFO - eval_link_prediction - [131/659]
+21:11:02 - INFO - eval_link_prediction - [262/659]
+21:11:03 - INFO - eval_link_prediction - [393/659]
+21:11:05 - INFO - eval_link_prediction - [524/659]
+21:11:07 - INFO - eval_link_prediction - [655/659]
+21:11:07 - INFO - eval_link_prediction - valid mrr: 0.1042  hits@1: 0.0553  hits@3: 0.1042  hits@10: 0.1962  
+21:11:07 - INFO - link_prediction - Epoch 25/40 [0/3360]: 0.041679
+21:11:18 - INFO - link_prediction - Epoch 25/40 [168/3360]: 0.055945
+21:11:30 - INFO - link_prediction - Epoch 25/40 [336/3360]: 0.046862
+21:11:42 - INFO - link_prediction - Epoch 25/40 [504/3360]: 0.043677
+21:11:53 - INFO - link_prediction - Epoch 25/40 [672/3360]: 0.043756
+21:12:05 - INFO - link_prediction - Epoch 25/40 [840/3360]: 0.048404
+21:12:16 - INFO - link_prediction - Epoch 25/40 [1008/3360]: 0.029275
+21:12:28 - INFO - link_prediction - Epoch 25/40 [1176/3360]: 0.039910
+21:12:40 - INFO - link_prediction - Epoch 25/40 [1344/3360]: 0.040615
+21:12:51 - INFO - link_prediction - Epoch 25/40 [1512/3360]: 0.044401
+21:13:03 - INFO - link_prediction - Epoch 25/40 [1680/3360]: 0.034712
+21:13:15 - INFO - link_prediction - Epoch 25/40 [1848/3360]: 0.036945
+21:13:26 - INFO - link_prediction - Epoch 25/40 [2016/3360]: 0.042670
+21:13:38 - INFO - link_prediction - Epoch 25/40 [2184/3360]: 0.032625
+21:13:50 - INFO - link_prediction - Epoch 25/40 [2352/3360]: 0.042754
+21:14:01 - INFO - link_prediction - Epoch 25/40 [2520/3360]: 0.051344
+21:14:13 - INFO - link_prediction - Epoch 25/40 [2688/3360]: 0.038175
+21:14:24 - INFO - link_prediction - Epoch 25/40 [2856/3360]: 0.040823
+21:14:36 - INFO - link_prediction - Epoch 25/40 [3024/3360]: 0.050230
+21:14:48 - INFO - link_prediction - Epoch 25/40 [3192/3360]: 0.033706
+21:14:59 - INFO - link_prediction - Evaluating on sample of training set
+21:15:00 - INFO - eval_link_prediction - [2,560/11,633]
+21:15:02 - INFO - eval_link_prediction - [5,120/11,633]
+21:15:03 - INFO - eval_link_prediction - [7,680/11,633]
+21:15:04 - INFO - eval_link_prediction - [10,240/11,633]
+21:15:05 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:15:07 - INFO - eval_link_prediction - [131/659]
+21:15:08 - INFO - eval_link_prediction - [262/659]
+21:15:10 - INFO - eval_link_prediction - [393/659]
+21:15:11 - INFO - eval_link_prediction - [524/659]
+21:15:13 - INFO - eval_link_prediction - [655/659]
+21:15:13 - INFO - eval_link_prediction - train mrr: 0.1371  hits@1: 0.0665  hits@3: 0.1402  hits@10: 0.2780  
+21:15:13 - INFO - link_prediction - Evaluating on validation set
+21:15:14 - INFO - eval_link_prediction - [3,072/13,087]
+21:15:16 - INFO - eval_link_prediction - [6,144/13,087]
+21:15:17 - INFO - eval_link_prediction - [9,216/13,087]
+21:15:19 - INFO - eval_link_prediction - [12,288/13,087]
+21:15:19 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:15:21 - INFO - eval_link_prediction - [131/659]
+21:15:23 - INFO - eval_link_prediction - [262/659]
+21:15:24 - INFO - eval_link_prediction - [393/659]
+21:15:26 - INFO - eval_link_prediction - [524/659]
+21:15:28 - INFO - eval_link_prediction - [655/659]
+21:15:28 - INFO - eval_link_prediction - valid mrr: 0.1045  hits@1: 0.0553  hits@3: 0.1038  hits@10: 0.1977  
+21:15:28 - INFO - link_prediction - Epoch 26/40 [0/3360]: 0.041487
+21:15:40 - INFO - link_prediction - Epoch 26/40 [168/3360]: 0.044949
+21:15:51 - INFO - link_prediction - Epoch 26/40 [336/3360]: 0.037059
+21:16:03 - INFO - link_prediction - Epoch 26/40 [504/3360]: 0.035350
+21:16:14 - INFO - link_prediction - Epoch 26/40 [672/3360]: 0.041001
+21:16:26 - INFO - link_prediction - Epoch 26/40 [840/3360]: 0.041104
+21:16:38 - INFO - link_prediction - Epoch 26/40 [1008/3360]: 0.029226
+21:16:50 - INFO - link_prediction - Epoch 26/40 [1176/3360]: 0.051604
+21:17:01 - INFO - link_prediction - Epoch 26/40 [1344/3360]: 0.044957
+21:17:13 - INFO - link_prediction - Epoch 26/40 [1512/3360]: 0.040441
+21:17:25 - INFO - link_prediction - Epoch 26/40 [1680/3360]: 0.046415
+21:17:36 - INFO - link_prediction - Epoch 26/40 [1848/3360]: 0.041562
+21:17:48 - INFO - link_prediction - Epoch 26/40 [2016/3360]: 0.031423
+21:17:59 - INFO - link_prediction - Epoch 26/40 [2184/3360]: 0.041687
+21:18:11 - INFO - link_prediction - Epoch 26/40 [2352/3360]: 0.039727
+21:18:23 - INFO - link_prediction - Epoch 26/40 [2520/3360]: 0.034039
+21:18:34 - INFO - link_prediction - Epoch 26/40 [2688/3360]: 0.037137
+21:18:46 - INFO - link_prediction - Epoch 26/40 [2856/3360]: 0.060166
+21:18:58 - INFO - link_prediction - Epoch 26/40 [3024/3360]: 0.043475
+21:19:09 - INFO - link_prediction - Epoch 26/40 [3192/3360]: 0.040941
+21:19:21 - INFO - link_prediction - Evaluating on sample of training set
+21:19:22 - INFO - eval_link_prediction - [2,560/11,633]
+21:19:23 - INFO - eval_link_prediction - [5,120/11,633]
+21:19:24 - INFO - eval_link_prediction - [7,680/11,633]
+21:19:26 - INFO - eval_link_prediction - [10,240/11,633]
+21:19:27 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:19:28 - INFO - eval_link_prediction - [131/659]
+21:19:30 - INFO - eval_link_prediction - [262/659]
+21:19:31 - INFO - eval_link_prediction - [393/659]
+21:19:33 - INFO - eval_link_prediction - [524/659]
+21:19:34 - INFO - eval_link_prediction - [655/659]
+21:19:34 - INFO - eval_link_prediction - train mrr: 0.1351  hits@1: 0.0664  hits@3: 0.1356  hits@10: 0.2715  
+21:19:34 - INFO - link_prediction - Evaluating on validation set
+21:19:36 - INFO - eval_link_prediction - [3,072/13,087]
+21:19:37 - INFO - eval_link_prediction - [6,144/13,087]
+21:19:39 - INFO - eval_link_prediction - [9,216/13,087]
+21:19:40 - INFO - eval_link_prediction - [12,288/13,087]
+21:19:41 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:19:43 - INFO - eval_link_prediction - [131/659]
+21:19:44 - INFO - eval_link_prediction - [262/659]
+21:19:46 - INFO - eval_link_prediction - [393/659]
+21:19:48 - INFO - eval_link_prediction - [524/659]
+21:19:49 - INFO - eval_link_prediction - [655/659]
+21:19:49 - INFO - eval_link_prediction - valid mrr: 0.1043  hits@1: 0.0562  hits@3: 0.1035  hits@10: 0.1946  
+21:19:50 - INFO - link_prediction - Epoch 27/40 [0/3360]: 0.025788
+21:20:01 - INFO - link_prediction - Epoch 27/40 [168/3360]: 0.039057
+21:20:13 - INFO - link_prediction - Epoch 27/40 [336/3360]: 0.047193
+21:20:24 - INFO - link_prediction - Epoch 27/40 [504/3360]: 0.034423
+21:20:36 - INFO - link_prediction - Epoch 27/40 [672/3360]: 0.040792
+21:20:48 - INFO - link_prediction - Epoch 27/40 [840/3360]: 0.029952
+21:20:59 - INFO - link_prediction - Epoch 27/40 [1008/3360]: 0.033153
+21:21:11 - INFO - link_prediction - Epoch 27/40 [1176/3360]: 0.028205
+21:21:23 - INFO - link_prediction - Epoch 27/40 [1344/3360]: 0.039503
+21:21:34 - INFO - link_prediction - Epoch 27/40 [1512/3360]: 0.043300
+21:21:46 - INFO - link_prediction - Epoch 27/40 [1680/3360]: 0.040150
+21:21:57 - INFO - link_prediction - Epoch 27/40 [1848/3360]: 0.036711
+21:22:09 - INFO - link_prediction - Epoch 27/40 [2016/3360]: 0.047921
+21:22:21 - INFO - link_prediction - Epoch 27/40 [2184/3360]: 0.037930
+21:22:32 - INFO - link_prediction - Epoch 27/40 [2352/3360]: 0.033239
+21:22:44 - INFO - link_prediction - Epoch 27/40 [2520/3360]: 0.051863
+21:22:56 - INFO - link_prediction - Epoch 27/40 [2688/3360]: 0.039477
+21:23:07 - INFO - link_prediction - Epoch 27/40 [2856/3360]: 0.046365
+21:23:19 - INFO - link_prediction - Epoch 27/40 [3024/3360]: 0.042757
+21:23:31 - INFO - link_prediction - Epoch 27/40 [3192/3360]: 0.048556
+21:23:42 - INFO - link_prediction - Evaluating on sample of training set
+21:23:43 - INFO - eval_link_prediction - [2,560/11,633]
+21:23:44 - INFO - eval_link_prediction - [5,120/11,633]
+21:23:46 - INFO - eval_link_prediction - [7,680/11,633]
+21:23:47 - INFO - eval_link_prediction - [10,240/11,633]
+21:23:48 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:23:50 - INFO - eval_link_prediction - [131/659]
+21:23:51 - INFO - eval_link_prediction - [262/659]
+21:23:53 - INFO - eval_link_prediction - [393/659]
+21:23:54 - INFO - eval_link_prediction - [524/659]
+21:23:56 - INFO - eval_link_prediction - [655/659]
+21:23:56 - INFO - eval_link_prediction - train mrr: 0.1350  hits@1: 0.0655  hits@3: 0.1377  hits@10: 0.2719  
+21:23:56 - INFO - link_prediction - Evaluating on validation set
+21:23:57 - INFO - eval_link_prediction - [3,072/13,087]
+21:23:58 - INFO - eval_link_prediction - [6,144/13,087]
+21:24:00 - INFO - eval_link_prediction - [9,216/13,087]
+21:24:02 - INFO - eval_link_prediction - [12,288/13,087]
+21:24:02 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:24:04 - INFO - eval_link_prediction - [131/659]
+21:24:06 - INFO - eval_link_prediction - [262/659]
+21:24:07 - INFO - eval_link_prediction - [393/659]
+21:24:09 - INFO - eval_link_prediction - [524/659]
+21:24:11 - INFO - eval_link_prediction - [655/659]
+21:24:11 - INFO - eval_link_prediction - valid mrr: 0.1037  hits@1: 0.0546  hits@3: 0.1028  hits@10: 0.1962  
+21:24:11 - INFO - link_prediction - Epoch 28/40 [0/3360]: 0.039810
+21:24:23 - INFO - link_prediction - Epoch 28/40 [168/3360]: 0.032004
+21:24:34 - INFO - link_prediction - Epoch 28/40 [336/3360]: 0.037144
+21:24:46 - INFO - link_prediction - Epoch 28/40 [504/3360]: 0.030142
+21:24:57 - INFO - link_prediction - Epoch 28/40 [672/3360]: 0.035481
+21:25:09 - INFO - link_prediction - Epoch 28/40 [840/3360]: 0.039008
+21:25:21 - INFO - link_prediction - Epoch 28/40 [1008/3360]: 0.037066
+21:25:32 - INFO - link_prediction - Epoch 28/40 [1176/3360]: 0.055082
+21:25:44 - INFO - link_prediction - Epoch 28/40 [1344/3360]: 0.044400
+21:25:56 - INFO - link_prediction - Epoch 28/40 [1512/3360]: 0.040999
+21:26:07 - INFO - link_prediction - Epoch 28/40 [1680/3360]: 0.024808
+21:26:19 - INFO - link_prediction - Epoch 28/40 [1848/3360]: 0.030599
+21:26:30 - INFO - link_prediction - Epoch 28/40 [2016/3360]: 0.044382
+21:26:42 - INFO - link_prediction - Epoch 28/40 [2184/3360]: 0.040778
+21:26:54 - INFO - link_prediction - Epoch 28/40 [2352/3360]: 0.051831
+21:27:05 - INFO - link_prediction - Epoch 28/40 [2520/3360]: 0.037584
+21:27:17 - INFO - link_prediction - Epoch 28/40 [2688/3360]: 0.048622
+21:27:29 - INFO - link_prediction - Epoch 28/40 [2856/3360]: 0.038564
+21:27:40 - INFO - link_prediction - Epoch 28/40 [3024/3360]: 0.036100
+21:27:52 - INFO - link_prediction - Epoch 28/40 [3192/3360]: 0.034388
+21:28:04 - INFO - link_prediction - Evaluating on sample of training set
+21:28:05 - INFO - eval_link_prediction - [2,560/11,633]
+21:28:06 - INFO - eval_link_prediction - [5,120/11,633]
+21:28:07 - INFO - eval_link_prediction - [7,680/11,633]
+21:28:09 - INFO - eval_link_prediction - [10,240/11,633]
+21:28:09 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:28:11 - INFO - eval_link_prediction - [131/659]
+21:28:12 - INFO - eval_link_prediction - [262/659]
+21:28:14 - INFO - eval_link_prediction - [393/659]
+21:28:15 - INFO - eval_link_prediction - [524/659]
+21:28:17 - INFO - eval_link_prediction - [655/659]
+21:28:17 - INFO - eval_link_prediction - train mrr: 0.1402  hits@1: 0.0702  hits@3: 0.1420  hits@10: 0.2791  
+21:28:17 - INFO - link_prediction - Evaluating on validation set
+21:28:18 - INFO - eval_link_prediction - [3,072/13,087]
+21:28:20 - INFO - eval_link_prediction - [6,144/13,087]
+21:28:21 - INFO - eval_link_prediction - [9,216/13,087]
+21:28:23 - INFO - eval_link_prediction - [12,288/13,087]
+21:28:24 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:28:25 - INFO - eval_link_prediction - [131/659]
+21:28:27 - INFO - eval_link_prediction - [262/659]
+21:28:29 - INFO - eval_link_prediction - [393/659]
+21:28:30 - INFO - eval_link_prediction - [524/659]
+21:28:32 - INFO - eval_link_prediction - [655/659]
+21:28:32 - INFO - eval_link_prediction - valid mrr: 0.1067  hits@1: 0.0571  hits@3: 0.1075  hits@10: 0.2003  
+21:28:33 - INFO - link_prediction - Epoch 29/40 [0/3360]: 0.041062
+21:28:44 - INFO - link_prediction - Epoch 29/40 [168/3360]: 0.028686
+21:28:56 - INFO - link_prediction - Epoch 29/40 [336/3360]: 0.028593
+21:29:07 - INFO - link_prediction - Epoch 29/40 [504/3360]: 0.046670
+21:29:19 - INFO - link_prediction - Epoch 29/40 [672/3360]: 0.028051
+21:29:31 - INFO - link_prediction - Epoch 29/40 [840/3360]: 0.038411
+21:29:42 - INFO - link_prediction - Epoch 29/40 [1008/3360]: 0.038521
+21:29:54 - INFO - link_prediction - Epoch 29/40 [1176/3360]: 0.035475
+21:30:06 - INFO - link_prediction - Epoch 29/40 [1344/3360]: 0.027780
+21:30:17 - INFO - link_prediction - Epoch 29/40 [1512/3360]: 0.055922
+21:30:29 - INFO - link_prediction - Epoch 29/40 [1680/3360]: 0.040522
+21:30:41 - INFO - link_prediction - Epoch 29/40 [1848/3360]: 0.033848
+21:30:52 - INFO - link_prediction - Epoch 29/40 [2016/3360]: 0.037213
+21:31:04 - INFO - link_prediction - Epoch 29/40 [2184/3360]: 0.033927
+21:31:15 - INFO - link_prediction - Epoch 29/40 [2352/3360]: 0.029598
+21:31:27 - INFO - link_prediction - Epoch 29/40 [2520/3360]: 0.036184
+21:31:39 - INFO - link_prediction - Epoch 29/40 [2688/3360]: 0.029221
+21:31:50 - INFO - link_prediction - Epoch 29/40 [2856/3360]: 0.046321
+21:32:02 - INFO - link_prediction - Epoch 29/40 [3024/3360]: 0.030764
+21:32:14 - INFO - link_prediction - Epoch 29/40 [3192/3360]: 0.019750
+21:32:25 - INFO - link_prediction - Evaluating on sample of training set
+21:32:26 - INFO - eval_link_prediction - [2,560/11,633]
+21:32:28 - INFO - eval_link_prediction - [5,120/11,633]
+21:32:29 - INFO - eval_link_prediction - [7,680/11,633]
+21:32:30 - INFO - eval_link_prediction - [10,240/11,633]
+21:32:31 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:32:33 - INFO - eval_link_prediction - [131/659]
+21:32:34 - INFO - eval_link_prediction - [262/659]
+21:32:36 - INFO - eval_link_prediction - [393/659]
+21:32:37 - INFO - eval_link_prediction - [524/659]
+21:32:39 - INFO - eval_link_prediction - [655/659]
+21:32:39 - INFO - eval_link_prediction - train mrr: 0.1323  hits@1: 0.0622  hits@3: 0.1338  hits@10: 0.2730  
+21:32:39 - INFO - link_prediction - Evaluating on validation set
+21:32:40 - INFO - eval_link_prediction - [3,072/13,087]
+21:32:42 - INFO - eval_link_prediction - [6,144/13,087]
+21:32:43 - INFO - eval_link_prediction - [9,216/13,087]
+21:32:45 - INFO - eval_link_prediction - [12,288/13,087]
+21:32:45 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:32:47 - INFO - eval_link_prediction - [131/659]
+21:32:49 - INFO - eval_link_prediction - [262/659]
+21:32:50 - INFO - eval_link_prediction - [393/659]
+21:32:52 - INFO - eval_link_prediction - [524/659]
+21:32:54 - INFO - eval_link_prediction - [655/659]
+21:32:54 - INFO - eval_link_prediction - valid mrr: 0.1046  hits@1: 0.0559  hits@3: 0.1041  hits@10: 0.1962  
+21:32:54 - INFO - link_prediction - Epoch 30/40 [0/3360]: 0.035540
+21:33:06 - INFO - link_prediction - Epoch 30/40 [168/3360]: 0.035140
+21:33:17 - INFO - link_prediction - Epoch 30/40 [336/3360]: 0.046532
+21:33:29 - INFO - link_prediction - Epoch 30/40 [504/3360]: 0.039968
+21:33:40 - INFO - link_prediction - Epoch 30/40 [672/3360]: 0.044449
+21:33:52 - INFO - link_prediction - Epoch 30/40 [840/3360]: 0.037496
+21:34:04 - INFO - link_prediction - Epoch 30/40 [1008/3360]: 0.030035
+21:34:15 - INFO - link_prediction - Epoch 30/40 [1176/3360]: 0.043169
+21:34:27 - INFO - link_prediction - Epoch 30/40 [1344/3360]: 0.046907
+21:34:39 - INFO - link_prediction - Epoch 30/40 [1512/3360]: 0.038571
+21:34:50 - INFO - link_prediction - Epoch 30/40 [1680/3360]: 0.034023
+21:35:02 - INFO - link_prediction - Epoch 30/40 [1848/3360]: 0.026721
+21:35:14 - INFO - link_prediction - Epoch 30/40 [2016/3360]: 0.024525
+21:35:25 - INFO - link_prediction - Epoch 30/40 [2184/3360]: 0.024277
+21:35:37 - INFO - link_prediction - Epoch 30/40 [2352/3360]: 0.050495
+21:35:49 - INFO - link_prediction - Epoch 30/40 [2520/3360]: 0.026181
+21:36:00 - INFO - link_prediction - Epoch 30/40 [2688/3360]: 0.039349
+21:36:12 - INFO - link_prediction - Epoch 30/40 [2856/3360]: 0.028852
+21:36:30 - INFO - link_prediction - Epoch 30/40 [3024/3360]: 0.034998
+21:36:41 - INFO - link_prediction - Epoch 30/40 [3192/3360]: 0.029482
+21:36:53 - INFO - link_prediction - Evaluating on sample of training set
+21:36:54 - INFO - eval_link_prediction - [2,560/11,633]
+21:36:56 - INFO - eval_link_prediction - [5,120/11,633]
+21:36:57 - INFO - eval_link_prediction - [7,680/11,633]
+21:36:58 - INFO - eval_link_prediction - [10,240/11,633]
+21:36:59 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:37:01 - INFO - eval_link_prediction - [131/659]
+21:37:03 - INFO - eval_link_prediction - [262/659]
+21:37:04 - INFO - eval_link_prediction - [393/659]
+21:37:06 - INFO - eval_link_prediction - [524/659]
+21:37:07 - INFO - eval_link_prediction - [655/659]
+21:37:07 - INFO - eval_link_prediction - train mrr: 0.1341  hits@1: 0.0651  hits@3: 0.1339  hits@10: 0.2721  
+21:37:07 - INFO - link_prediction - Evaluating on validation set
+21:37:08 - INFO - eval_link_prediction - [3,072/13,087]
+21:37:10 - INFO - eval_link_prediction - [6,144/13,087]
+21:37:12 - INFO - eval_link_prediction - [9,216/13,087]
+21:37:13 - INFO - eval_link_prediction - [12,288/13,087]
+21:37:14 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:37:16 - INFO - eval_link_prediction - [131/659]
+21:37:17 - INFO - eval_link_prediction - [262/659]
+21:37:19 - INFO - eval_link_prediction - [393/659]
+21:37:21 - INFO - eval_link_prediction - [524/659]
+21:37:22 - INFO - eval_link_prediction - [655/659]
+21:37:22 - INFO - eval_link_prediction - valid mrr: 0.1050  hits@1: 0.0559  hits@3: 0.1045  hits@10: 0.1986  
+21:37:23 - INFO - link_prediction - Epoch 31/40 [0/3360]: 0.025681
+21:37:34 - INFO - link_prediction - Epoch 31/40 [168/3360]: 0.033972
+21:37:46 - INFO - link_prediction - Epoch 31/40 [336/3360]: 0.031282
+21:37:57 - INFO - link_prediction - Epoch 31/40 [504/3360]: 0.047796
+21:38:09 - INFO - link_prediction - Epoch 31/40 [672/3360]: 0.036155
+21:38:21 - INFO - link_prediction - Epoch 31/40 [840/3360]: 0.027750
+21:38:32 - INFO - link_prediction - Epoch 31/40 [1008/3360]: 0.028836
+21:38:44 - INFO - link_prediction - Epoch 31/40 [1176/3360]: 0.036016
+21:38:55 - INFO - link_prediction - Epoch 31/40 [1344/3360]: 0.024080
+21:39:07 - INFO - link_prediction - Epoch 31/40 [1512/3360]: 0.035266
+21:39:19 - INFO - link_prediction - Epoch 31/40 [1680/3360]: 0.026923
+21:39:30 - INFO - link_prediction - Epoch 31/40 [1848/3360]: 0.043000
+21:39:42 - INFO - link_prediction - Epoch 31/40 [2016/3360]: 0.022264
+21:39:54 - INFO - link_prediction - Epoch 31/40 [2184/3360]: 0.041608
+21:40:05 - INFO - link_prediction - Epoch 31/40 [2352/3360]: 0.042733
+21:40:17 - INFO - link_prediction - Epoch 31/40 [2520/3360]: 0.030486
+21:40:29 - INFO - link_prediction - Epoch 31/40 [2688/3360]: 0.044384
+21:40:40 - INFO - link_prediction - Epoch 31/40 [2856/3360]: 0.028789
+21:40:52 - INFO - link_prediction - Epoch 31/40 [3024/3360]: 0.042619
+21:41:03 - INFO - link_prediction - Epoch 31/40 [3192/3360]: 0.031729
+21:41:15 - INFO - link_prediction - Evaluating on sample of training set
+21:41:16 - INFO - eval_link_prediction - [2,560/11,633]
+21:41:17 - INFO - eval_link_prediction - [5,120/11,633]
+21:41:19 - INFO - eval_link_prediction - [7,680/11,633]
+21:41:20 - INFO - eval_link_prediction - [10,240/11,633]
+21:41:21 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:41:23 - INFO - eval_link_prediction - [131/659]
+21:41:24 - INFO - eval_link_prediction - [262/659]
+21:41:26 - INFO - eval_link_prediction - [393/659]
+21:41:27 - INFO - eval_link_prediction - [524/659]
+21:41:29 - INFO - eval_link_prediction - [655/659]
+21:41:29 - INFO - eval_link_prediction - train mrr: 0.1366  hits@1: 0.0675  hits@3: 0.1368  hits@10: 0.2742  
+21:41:29 - INFO - link_prediction - Evaluating on validation set
+21:41:30 - INFO - eval_link_prediction - [3,072/13,087]
+21:41:31 - INFO - eval_link_prediction - [6,144/13,087]
+21:41:33 - INFO - eval_link_prediction - [9,216/13,087]
+21:41:35 - INFO - eval_link_prediction - [12,288/13,087]
+21:41:35 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:41:37 - INFO - eval_link_prediction - [131/659]
+21:41:39 - INFO - eval_link_prediction - [262/659]
+21:41:40 - INFO - eval_link_prediction - [393/659]
+21:41:42 - INFO - eval_link_prediction - [524/659]
+21:41:44 - INFO - eval_link_prediction - [655/659]
+21:41:44 - INFO - eval_link_prediction - valid mrr: 0.1059  hits@1: 0.0567  hits@3: 0.1053  hits@10: 0.1995  
+21:41:44 - INFO - link_prediction - Epoch 32/40 [0/3360]: 0.041347
+21:41:55 - INFO - link_prediction - Epoch 32/40 [168/3360]: 0.024568
+21:42:07 - INFO - link_prediction - Epoch 32/40 [336/3360]: 0.033985
+21:42:19 - INFO - link_prediction - Epoch 32/40 [504/3360]: 0.039433
+21:42:30 - INFO - link_prediction - Epoch 32/40 [672/3360]: 0.032756
+21:42:42 - INFO - link_prediction - Epoch 32/40 [840/3360]: 0.037667
+21:42:54 - INFO - link_prediction - Epoch 32/40 [1008/3360]: 0.028921
+21:43:05 - INFO - link_prediction - Epoch 32/40 [1176/3360]: 0.031480
+21:43:17 - INFO - link_prediction - Epoch 32/40 [1344/3360]: 0.036128
+21:43:28 - INFO - link_prediction - Epoch 32/40 [1512/3360]: 0.039786
+21:43:40 - INFO - link_prediction - Epoch 32/40 [1680/3360]: 0.051888
+21:43:52 - INFO - link_prediction - Epoch 32/40 [1848/3360]: 0.030778
+21:44:03 - INFO - link_prediction - Epoch 32/40 [2016/3360]: 0.030017
+21:44:15 - INFO - link_prediction - Epoch 32/40 [2184/3360]: 0.048584
+21:44:27 - INFO - link_prediction - Epoch 32/40 [2352/3360]: 0.042951
+21:44:38 - INFO - link_prediction - Epoch 32/40 [2520/3360]: 0.034643
+21:44:50 - INFO - link_prediction - Epoch 32/40 [2688/3360]: 0.030844
+21:45:01 - INFO - link_prediction - Epoch 32/40 [2856/3360]: 0.038293
+21:45:13 - INFO - link_prediction - Epoch 32/40 [3024/3360]: 0.050551
+21:45:25 - INFO - link_prediction - Epoch 32/40 [3192/3360]: 0.029130
+21:45:36 - INFO - link_prediction - Evaluating on sample of training set
+21:45:37 - INFO - eval_link_prediction - [2,560/11,633]
+21:45:39 - INFO - eval_link_prediction - [5,120/11,633]
+21:45:40 - INFO - eval_link_prediction - [7,680/11,633]
+21:45:41 - INFO - eval_link_prediction - [10,240/11,633]
+21:45:42 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:45:44 - INFO - eval_link_prediction - [131/659]
+21:45:45 - INFO - eval_link_prediction - [262/659]
+21:45:47 - INFO - eval_link_prediction - [393/659]
+21:45:48 - INFO - eval_link_prediction - [524/659]
+21:45:50 - INFO - eval_link_prediction - [655/659]
+21:45:50 - INFO - eval_link_prediction - train mrr: 0.1353  hits@1: 0.0647  hits@3: 0.1365  hits@10: 0.2777  
+21:45:50 - INFO - link_prediction - Evaluating on validation set
+21:45:51 - INFO - eval_link_prediction - [3,072/13,087]
+21:45:53 - INFO - eval_link_prediction - [6,144/13,087]
+21:45:54 - INFO - eval_link_prediction - [9,216/13,087]
+21:45:56 - INFO - eval_link_prediction - [12,288/13,087]
+21:45:56 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:45:58 - INFO - eval_link_prediction - [131/659]
+21:46:00 - INFO - eval_link_prediction - [262/659]
+21:46:02 - INFO - eval_link_prediction - [393/659]
+21:46:03 - INFO - eval_link_prediction - [524/659]
+21:46:05 - INFO - eval_link_prediction - [655/659]
+21:46:05 - INFO - eval_link_prediction - valid mrr: 0.1039  hits@1: 0.0538  hits@3: 0.1045  hits@10: 0.1990  
+21:46:05 - INFO - link_prediction - Epoch 33/40 [0/3360]: 0.028079
+21:46:17 - INFO - link_prediction - Epoch 33/40 [168/3360]: 0.033748
+21:46:28 - INFO - link_prediction - Epoch 33/40 [336/3360]: 0.018248
+21:46:40 - INFO - link_prediction - Epoch 33/40 [504/3360]: 0.029782
+21:46:52 - INFO - link_prediction - Epoch 33/40 [672/3360]: 0.026478
+21:47:03 - INFO - link_prediction - Epoch 33/40 [840/3360]: 0.032196
+21:47:15 - INFO - link_prediction - Epoch 33/40 [1008/3360]: 0.052920
+21:47:26 - INFO - link_prediction - Epoch 33/40 [1176/3360]: 0.035927
+21:47:38 - INFO - link_prediction - Epoch 33/40 [1344/3360]: 0.021479
+21:47:50 - INFO - link_prediction - Epoch 33/40 [1512/3360]: 0.030416
+21:48:01 - INFO - link_prediction - Epoch 33/40 [1680/3360]: 0.036391
+21:48:13 - INFO - link_prediction - Epoch 33/40 [1848/3360]: 0.028920
+21:48:25 - INFO - link_prediction - Epoch 33/40 [2016/3360]: 0.041004
+21:48:36 - INFO - link_prediction - Epoch 33/40 [2184/3360]: 0.025914
+21:48:48 - INFO - link_prediction - Epoch 33/40 [2352/3360]: 0.043609
+21:49:00 - INFO - link_prediction - Epoch 33/40 [2520/3360]: 0.027899
+21:49:11 - INFO - link_prediction - Epoch 33/40 [2688/3360]: 0.032382
+21:49:23 - INFO - link_prediction - Epoch 33/40 [2856/3360]: 0.045934
+21:49:34 - INFO - link_prediction - Epoch 33/40 [3024/3360]: 0.045242
+21:49:46 - INFO - link_prediction - Epoch 33/40 [3192/3360]: 0.039426
+21:49:58 - INFO - link_prediction - Evaluating on sample of training set
+21:49:59 - INFO - eval_link_prediction - [2,560/11,633]
+21:50:00 - INFO - eval_link_prediction - [5,120/11,633]
+21:50:01 - INFO - eval_link_prediction - [7,680/11,633]
+21:50:03 - INFO - eval_link_prediction - [10,240/11,633]
+21:50:03 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:50:05 - INFO - eval_link_prediction - [131/659]
+21:50:07 - INFO - eval_link_prediction - [262/659]
+21:50:08 - INFO - eval_link_prediction - [393/659]
+21:50:10 - INFO - eval_link_prediction - [524/659]
+21:50:11 - INFO - eval_link_prediction - [655/659]
+21:50:11 - INFO - eval_link_prediction - train mrr: 0.1379  hits@1: 0.0668  hits@3: 0.1393  hits@10: 0.2793  
+21:50:11 - INFO - link_prediction - Evaluating on validation set
+21:50:12 - INFO - eval_link_prediction - [3,072/13,087]
+21:50:14 - INFO - eval_link_prediction - [6,144/13,087]
+21:50:16 - INFO - eval_link_prediction - [9,216/13,087]
+21:50:17 - INFO - eval_link_prediction - [12,288/13,087]
+21:50:18 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:50:20 - INFO - eval_link_prediction - [131/659]
+21:50:21 - INFO - eval_link_prediction - [262/659]
+21:50:23 - INFO - eval_link_prediction - [393/659]
+21:50:25 - INFO - eval_link_prediction - [524/659]
+21:50:26 - INFO - eval_link_prediction - [655/659]
+21:50:26 - INFO - eval_link_prediction - valid mrr: 0.1045  hits@1: 0.0551  hits@3: 0.1035  hits@10: 0.1994  
+21:50:26 - INFO - link_prediction - Epoch 34/40 [0/3360]: 0.033886
+21:50:38 - INFO - link_prediction - Epoch 34/40 [168/3360]: 0.037200
+21:50:50 - INFO - link_prediction - Epoch 34/40 [336/3360]: 0.026017
+21:51:01 - INFO - link_prediction - Epoch 34/40 [504/3360]: 0.031410
+21:51:13 - INFO - link_prediction - Epoch 34/40 [672/3360]: 0.028218
+21:51:25 - INFO - link_prediction - Epoch 34/40 [840/3360]: 0.031236
+21:51:36 - INFO - link_prediction - Epoch 34/40 [1008/3360]: 0.040790
+21:51:48 - INFO - link_prediction - Epoch 34/40 [1176/3360]: 0.026587
+21:51:59 - INFO - link_prediction - Epoch 34/40 [1344/3360]: 0.037738
+21:52:11 - INFO - link_prediction - Epoch 34/40 [1512/3360]: 0.027218
+21:52:23 - INFO - link_prediction - Epoch 34/40 [1680/3360]: 0.030560
+21:52:34 - INFO - link_prediction - Epoch 34/40 [1848/3360]: 0.029218
+21:52:46 - INFO - link_prediction - Epoch 34/40 [2016/3360]: 0.017262
+21:52:58 - INFO - link_prediction - Epoch 34/40 [2184/3360]: 0.032584
+21:53:09 - INFO - link_prediction - Epoch 34/40 [2352/3360]: 0.037810
+21:53:21 - INFO - link_prediction - Epoch 34/40 [2520/3360]: 0.031630
+21:53:32 - INFO - link_prediction - Epoch 34/40 [2688/3360]: 0.042384
+21:53:44 - INFO - link_prediction - Epoch 34/40 [2856/3360]: 0.051662
+21:53:56 - INFO - link_prediction - Epoch 34/40 [3024/3360]: 0.039793
+21:54:07 - INFO - link_prediction - Epoch 34/40 [3192/3360]: 0.024213
+21:54:19 - INFO - link_prediction - Evaluating on sample of training set
+21:54:20 - INFO - eval_link_prediction - [2,560/11,633]
+21:54:21 - INFO - eval_link_prediction - [5,120/11,633]
+21:54:23 - INFO - eval_link_prediction - [7,680/11,633]
+21:54:24 - INFO - eval_link_prediction - [10,240/11,633]
+21:54:25 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:54:26 - INFO - eval_link_prediction - [131/659]
+21:54:28 - INFO - eval_link_prediction - [262/659]
+21:54:29 - INFO - eval_link_prediction - [393/659]
+21:54:31 - INFO - eval_link_prediction - [524/659]
+21:54:32 - INFO - eval_link_prediction - [655/659]
+21:54:32 - INFO - eval_link_prediction - train mrr: 0.1407  hits@1: 0.0690  hits@3: 0.1422  hits@10: 0.2845  
+21:54:32 - INFO - link_prediction - Evaluating on validation set
+21:54:34 - INFO - eval_link_prediction - [3,072/13,087]
+21:54:35 - INFO - eval_link_prediction - [6,144/13,087]
+21:54:37 - INFO - eval_link_prediction - [9,216/13,087]
+21:54:38 - INFO - eval_link_prediction - [12,288/13,087]
+21:54:39 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:54:41 - INFO - eval_link_prediction - [131/659]
+21:54:43 - INFO - eval_link_prediction - [262/659]
+21:54:44 - INFO - eval_link_prediction - [393/659]
+21:54:46 - INFO - eval_link_prediction - [524/659]
+21:54:48 - INFO - eval_link_prediction - [655/659]
+21:54:48 - INFO - eval_link_prediction - valid mrr: 0.1071  hits@1: 0.0571  hits@3: 0.1068  hits@10: 0.2026  
+21:54:49 - INFO - link_prediction - Epoch 35/40 [0/3360]: 0.034859
+21:55:00 - INFO - link_prediction - Epoch 35/40 [168/3360]: 0.024866
+21:55:12 - INFO - link_prediction - Epoch 35/40 [336/3360]: 0.045990
+21:55:23 - INFO - link_prediction - Epoch 35/40 [504/3360]: 0.035168
+21:55:35 - INFO - link_prediction - Epoch 35/40 [672/3360]: 0.022885
+21:55:47 - INFO - link_prediction - Epoch 35/40 [840/3360]: 0.047371
+21:55:58 - INFO - link_prediction - Epoch 35/40 [1008/3360]: 0.025881
+21:56:10 - INFO - link_prediction - Epoch 35/40 [1176/3360]: 0.033366
+21:56:22 - INFO - link_prediction - Epoch 35/40 [1344/3360]: 0.038210
+21:56:33 - INFO - link_prediction - Epoch 35/40 [1512/3360]: 0.030837
+21:56:45 - INFO - link_prediction - Epoch 35/40 [1680/3360]: 0.032347
+21:56:56 - INFO - link_prediction - Epoch 35/40 [1848/3360]: 0.023475
+21:57:08 - INFO - link_prediction - Epoch 35/40 [2016/3360]: 0.052084
+21:57:20 - INFO - link_prediction - Epoch 35/40 [2184/3360]: 0.025603
+21:57:31 - INFO - link_prediction - Epoch 35/40 [2352/3360]: 0.036400
+21:57:43 - INFO - link_prediction - Epoch 35/40 [2520/3360]: 0.031152
+21:57:55 - INFO - link_prediction - Epoch 35/40 [2688/3360]: 0.039096
+21:58:06 - INFO - link_prediction - Epoch 35/40 [2856/3360]: 0.028217
+21:58:18 - INFO - link_prediction - Epoch 35/40 [3024/3360]: 0.025591
+21:58:30 - INFO - link_prediction - Epoch 35/40 [3192/3360]: 0.037928
+21:58:41 - INFO - link_prediction - Evaluating on sample of training set
+21:58:42 - INFO - eval_link_prediction - [2,560/11,633]
+21:58:43 - INFO - eval_link_prediction - [5,120/11,633]
+21:58:45 - INFO - eval_link_prediction - [7,680/11,633]
+21:58:46 - INFO - eval_link_prediction - [10,240/11,633]
+21:58:47 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:58:49 - INFO - eval_link_prediction - [131/659]
+21:58:50 - INFO - eval_link_prediction - [262/659]
+21:58:52 - INFO - eval_link_prediction - [393/659]
+21:58:53 - INFO - eval_link_prediction - [524/659]
+21:58:55 - INFO - eval_link_prediction - [655/659]
+21:58:55 - INFO - eval_link_prediction - train mrr: 0.1402  hits@1: 0.0687  hits@3: 0.1414  hits@10: 0.2842  
+21:58:55 - INFO - link_prediction - Evaluating on validation set
+21:58:56 - INFO - eval_link_prediction - [3,072/13,087]
+21:58:57 - INFO - eval_link_prediction - [6,144/13,087]
+21:58:59 - INFO - eval_link_prediction - [9,216/13,087]
+21:59:01 - INFO - eval_link_prediction - [12,288/13,087]
+21:59:01 - INFO - eval_link_prediction - Computing metrics on set of triples
+21:59:03 - INFO - eval_link_prediction - [131/659]
+21:59:05 - INFO - eval_link_prediction - [262/659]
+21:59:06 - INFO - eval_link_prediction - [393/659]
+21:59:08 - INFO - eval_link_prediction - [524/659]
+21:59:10 - INFO - eval_link_prediction - [655/659]
+21:59:10 - INFO - eval_link_prediction - valid mrr: 0.1062  hits@1: 0.0563  hits@3: 0.1064  hits@10: 0.2006  
+21:59:10 - INFO - link_prediction - Epoch 36/40 [0/3360]: 0.025908
+21:59:22 - INFO - link_prediction - Epoch 36/40 [168/3360]: 0.041405
+21:59:33 - INFO - link_prediction - Epoch 36/40 [336/3360]: 0.024026
+21:59:45 - INFO - link_prediction - Epoch 36/40 [504/3360]: 0.042734
+21:59:56 - INFO - link_prediction - Epoch 36/40 [672/3360]: 0.036254
+22:00:08 - INFO - link_prediction - Epoch 36/40 [840/3360]: 0.028717
+22:00:20 - INFO - link_prediction - Epoch 36/40 [1008/3360]: 0.059341
+22:00:31 - INFO - link_prediction - Epoch 36/40 [1176/3360]: 0.028093
+22:00:43 - INFO - link_prediction - Epoch 36/40 [1344/3360]: 0.042457
+22:00:55 - INFO - link_prediction - Epoch 36/40 [1512/3360]: 0.032629
+22:01:06 - INFO - link_prediction - Epoch 36/40 [1680/3360]: 0.044855
+22:01:18 - INFO - link_prediction - Epoch 36/40 [1848/3360]: 0.033663
+22:01:29 - INFO - link_prediction - Epoch 36/40 [2016/3360]: 0.038798
+22:01:41 - INFO - link_prediction - Epoch 36/40 [2184/3360]: 0.045627
+22:01:53 - INFO - link_prediction - Epoch 36/40 [2352/3360]: 0.039082
+22:02:04 - INFO - link_prediction - Epoch 36/40 [2520/3360]: 0.040342
+22:02:16 - INFO - link_prediction - Epoch 36/40 [2688/3360]: 0.037508
+22:02:28 - INFO - link_prediction - Epoch 36/40 [2856/3360]: 0.034618
+22:02:39 - INFO - link_prediction - Epoch 36/40 [3024/3360]: 0.030928
+22:02:51 - INFO - link_prediction - Epoch 36/40 [3192/3360]: 0.027448
+22:03:02 - INFO - link_prediction - Evaluating on sample of training set
+22:03:03 - INFO - eval_link_prediction - [2,560/11,633]
+22:03:05 - INFO - eval_link_prediction - [5,120/11,633]
+22:03:06 - INFO - eval_link_prediction - [7,680/11,633]
+22:03:07 - INFO - eval_link_prediction - [10,240/11,633]
+22:03:08 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:03:10 - INFO - eval_link_prediction - [131/659]
+22:03:11 - INFO - eval_link_prediction - [262/659]
+22:03:13 - INFO - eval_link_prediction - [393/659]
+22:03:14 - INFO - eval_link_prediction - [524/659]
+22:03:16 - INFO - eval_link_prediction - [655/659]
+22:03:16 - INFO - eval_link_prediction - train mrr: 0.1415  hits@1: 0.0693  hits@3: 0.1431  hits@10: 0.2880  
+22:03:16 - INFO - link_prediction - Evaluating on validation set
+22:03:17 - INFO - eval_link_prediction - [3,072/13,087]
+22:03:19 - INFO - eval_link_prediction - [6,144/13,087]
+22:03:20 - INFO - eval_link_prediction - [9,216/13,087]
+22:03:22 - INFO - eval_link_prediction - [12,288/13,087]
+22:03:22 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:03:24 - INFO - eval_link_prediction - [131/659]
+22:03:26 - INFO - eval_link_prediction - [262/659]
+22:03:28 - INFO - eval_link_prediction - [393/659]
+22:03:29 - INFO - eval_link_prediction - [524/659]
+22:03:31 - INFO - eval_link_prediction - [655/659]
+22:03:31 - INFO - eval_link_prediction - valid mrr: 0.1076  hits@1: 0.0578  hits@3: 0.1076  hits@10: 0.2022  
+22:03:31 - INFO - link_prediction - Epoch 37/40 [0/3360]: 0.021235
+22:03:43 - INFO - link_prediction - Epoch 37/40 [168/3360]: 0.028883
+22:03:55 - INFO - link_prediction - Epoch 37/40 [336/3360]: 0.033715
+22:04:06 - INFO - link_prediction - Epoch 37/40 [504/3360]: 0.027202
+22:04:18 - INFO - link_prediction - Epoch 37/40 [672/3360]: 0.049341
+22:04:30 - INFO - link_prediction - Epoch 37/40 [840/3360]: 0.027401
+22:04:41 - INFO - link_prediction - Epoch 37/40 [1008/3360]: 0.043082
+22:04:53 - INFO - link_prediction - Epoch 37/40 [1176/3360]: 0.029494
+22:05:04 - INFO - link_prediction - Epoch 37/40 [1344/3360]: 0.045359
+22:05:16 - INFO - link_prediction - Epoch 37/40 [1512/3360]: 0.035036
+22:05:28 - INFO - link_prediction - Epoch 37/40 [1680/3360]: 0.021931
+22:05:39 - INFO - link_prediction - Epoch 37/40 [1848/3360]: 0.037841
+22:05:51 - INFO - link_prediction - Epoch 37/40 [2016/3360]: 0.038295
+22:06:03 - INFO - link_prediction - Epoch 37/40 [2184/3360]: 0.034992
+22:06:14 - INFO - link_prediction - Epoch 37/40 [2352/3360]: 0.038941
+22:06:26 - INFO - link_prediction - Epoch 37/40 [2520/3360]: 0.035934
+22:06:37 - INFO - link_prediction - Epoch 37/40 [2688/3360]: 0.041650
+22:06:49 - INFO - link_prediction - Epoch 37/40 [2856/3360]: 0.051932
+22:07:01 - INFO - link_prediction - Epoch 37/40 [3024/3360]: 0.035642
+22:07:12 - INFO - link_prediction - Epoch 37/40 [3192/3360]: 0.020709
+22:07:24 - INFO - link_prediction - Evaluating on sample of training set
+22:07:25 - INFO - eval_link_prediction - [2,560/11,633]
+22:07:26 - INFO - eval_link_prediction - [5,120/11,633]
+22:07:28 - INFO - eval_link_prediction - [7,680/11,633]
+22:07:29 - INFO - eval_link_prediction - [10,240/11,633]
+22:07:30 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:07:31 - INFO - eval_link_prediction - [131/659]
+22:07:33 - INFO - eval_link_prediction - [262/659]
+22:07:34 - INFO - eval_link_prediction - [393/659]
+22:07:36 - INFO - eval_link_prediction - [524/659]
+22:07:37 - INFO - eval_link_prediction - [655/659]
+22:07:37 - INFO - eval_link_prediction - train mrr: 0.1410  hits@1: 0.0684  hits@3: 0.1415  hits@10: 0.2884  
+22:07:37 - INFO - link_prediction - Evaluating on validation set
+22:07:39 - INFO - eval_link_prediction - [3,072/13,087]
+22:07:40 - INFO - eval_link_prediction - [6,144/13,087]
+22:07:42 - INFO - eval_link_prediction - [9,216/13,087]
+22:07:43 - INFO - eval_link_prediction - [12,288/13,087]
+22:07:44 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:07:46 - INFO - eval_link_prediction - [131/659]
+22:07:47 - INFO - eval_link_prediction - [262/659]
+22:07:49 - INFO - eval_link_prediction - [393/659]
+22:07:51 - INFO - eval_link_prediction - [524/659]
+22:07:53 - INFO - eval_link_prediction - [655/659]
+22:07:53 - INFO - eval_link_prediction - valid mrr: 0.1082  hits@1: 0.0579  hits@3: 0.1080  hits@10: 0.2039  
+22:07:53 - INFO - link_prediction - Epoch 38/40 [0/3360]: 0.037660
+22:08:05 - INFO - link_prediction - Epoch 38/40 [168/3360]: 0.034895
+22:08:16 - INFO - link_prediction - Epoch 38/40 [336/3360]: 0.043155
+22:08:28 - INFO - link_prediction - Epoch 38/40 [504/3360]: 0.036306
+22:08:39 - INFO - link_prediction - Epoch 38/40 [672/3360]: 0.024753
+22:08:51 - INFO - link_prediction - Epoch 38/40 [840/3360]: 0.033736
+22:09:03 - INFO - link_prediction - Epoch 38/40 [1008/3360]: 0.030779
+22:09:14 - INFO - link_prediction - Epoch 38/40 [1176/3360]: 0.060718
+22:09:26 - INFO - link_prediction - Epoch 38/40 [1344/3360]: 0.031010
+22:09:38 - INFO - link_prediction - Epoch 38/40 [1512/3360]: 0.026810
+22:09:49 - INFO - link_prediction - Epoch 38/40 [1680/3360]: 0.023271
+22:10:01 - INFO - link_prediction - Epoch 38/40 [1848/3360]: 0.019011
+22:10:12 - INFO - link_prediction - Epoch 38/40 [2016/3360]: 0.030058
+22:10:24 - INFO - link_prediction - Epoch 38/40 [2184/3360]: 0.043962
+22:10:36 - INFO - link_prediction - Epoch 38/40 [2352/3360]: 0.036095
+22:10:47 - INFO - link_prediction - Epoch 38/40 [2520/3360]: 0.060585
+22:10:59 - INFO - link_prediction - Epoch 38/40 [2688/3360]: 0.032616
+22:11:11 - INFO - link_prediction - Epoch 38/40 [2856/3360]: 0.037934
+22:11:22 - INFO - link_prediction - Epoch 38/40 [3024/3360]: 0.026740
+22:11:34 - INFO - link_prediction - Epoch 38/40 [3192/3360]: 0.043133
+22:11:45 - INFO - link_prediction - Evaluating on sample of training set
+22:11:47 - INFO - eval_link_prediction - [2,560/11,633]
+22:11:48 - INFO - eval_link_prediction - [5,120/11,633]
+22:11:49 - INFO - eval_link_prediction - [7,680/11,633]
+22:11:50 - INFO - eval_link_prediction - [10,240/11,633]
+22:11:51 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:11:53 - INFO - eval_link_prediction - [131/659]
+22:11:54 - INFO - eval_link_prediction - [262/659]
+22:11:56 - INFO - eval_link_prediction - [393/659]
+22:11:57 - INFO - eval_link_prediction - [524/659]
+22:11:59 - INFO - eval_link_prediction - [655/659]
+22:11:59 - INFO - eval_link_prediction - train mrr: 0.1406  hits@1: 0.0683  hits@3: 0.1416  hits@10: 0.2870  
+22:11:59 - INFO - link_prediction - Evaluating on validation set
+22:12:00 - INFO - eval_link_prediction - [3,072/13,087]
+22:12:02 - INFO - eval_link_prediction - [6,144/13,087]
+22:12:03 - INFO - eval_link_prediction - [9,216/13,087]
+22:12:05 - INFO - eval_link_prediction - [12,288/13,087]
+22:12:05 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:12:07 - INFO - eval_link_prediction - [131/659]
+22:12:09 - INFO - eval_link_prediction - [262/659]
+22:12:11 - INFO - eval_link_prediction - [393/659]
+22:12:12 - INFO - eval_link_prediction - [524/659]
+22:12:14 - INFO - eval_link_prediction - [655/659]
+22:12:14 - INFO - eval_link_prediction - valid mrr: 0.1078  hits@1: 0.0576  hits@3: 0.1080  hits@10: 0.2024  
+22:12:14 - INFO - link_prediction - Epoch 39/40 [0/3360]: 0.054582
+22:12:26 - INFO - link_prediction - Epoch 39/40 [168/3360]: 0.033733
+22:12:37 - INFO - link_prediction - Epoch 39/40 [336/3360]: 0.034551
+22:12:49 - INFO - link_prediction - Epoch 39/40 [504/3360]: 0.038699
+22:13:01 - INFO - link_prediction - Epoch 39/40 [672/3360]: 0.034274
+22:13:12 - INFO - link_prediction - Epoch 39/40 [840/3360]: 0.022007
+22:13:24 - INFO - link_prediction - Epoch 39/40 [1008/3360]: 0.033627
+22:13:36 - INFO - link_prediction - Epoch 39/40 [1176/3360]: 0.050971
+22:13:47 - INFO - link_prediction - Epoch 39/40 [1344/3360]: 0.036041
+22:13:59 - INFO - link_prediction - Epoch 39/40 [1512/3360]: 0.048280
+22:14:10 - INFO - link_prediction - Epoch 39/40 [1680/3360]: 0.040020
+22:14:22 - INFO - link_prediction - Epoch 39/40 [1848/3360]: 0.019617
+22:14:34 - INFO - link_prediction - Epoch 39/40 [2016/3360]: 0.034096
+22:14:45 - INFO - link_prediction - Epoch 39/40 [2184/3360]: 0.034846
+22:14:57 - INFO - link_prediction - Epoch 39/40 [2352/3360]: 0.021405
+22:15:09 - INFO - link_prediction - Epoch 39/40 [2520/3360]: 0.029027
+22:15:20 - INFO - link_prediction - Epoch 39/40 [2688/3360]: 0.025335
+22:15:32 - INFO - link_prediction - Epoch 39/40 [2856/3360]: 0.035881
+22:15:44 - INFO - link_prediction - Epoch 39/40 [3024/3360]: 0.031518
+22:15:55 - INFO - link_prediction - Epoch 39/40 [3192/3360]: 0.038510
+22:16:07 - INFO - link_prediction - Evaluating on sample of training set
+22:16:08 - INFO - eval_link_prediction - [2,560/11,633]
+22:16:09 - INFO - eval_link_prediction - [5,120/11,633]
+22:16:10 - INFO - eval_link_prediction - [7,680/11,633]
+22:16:12 - INFO - eval_link_prediction - [10,240/11,633]
+22:16:12 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:16:14 - INFO - eval_link_prediction - [131/659]
+22:16:16 - INFO - eval_link_prediction - [262/659]
+22:16:17 - INFO - eval_link_prediction - [393/659]
+22:16:19 - INFO - eval_link_prediction - [524/659]
+22:16:20 - INFO - eval_link_prediction - [655/659]
+22:16:20 - INFO - eval_link_prediction - train mrr: 0.1432  hits@1: 0.0703  hits@3: 0.1442  hits@10: 0.2909  
+22:16:20 - INFO - link_prediction - Evaluating on validation set
+22:16:22 - INFO - eval_link_prediction - [3,072/13,087]
+22:16:23 - INFO - eval_link_prediction - [6,144/13,087]
+22:16:25 - INFO - eval_link_prediction - [9,216/13,087]
+22:16:26 - INFO - eval_link_prediction - [12,288/13,087]
+22:16:27 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:16:29 - INFO - eval_link_prediction - [131/659]
+22:16:30 - INFO - eval_link_prediction - [262/659]
+22:16:32 - INFO - eval_link_prediction - [393/659]
+22:16:34 - INFO - eval_link_prediction - [524/659]
+22:16:35 - INFO - eval_link_prediction - [655/659]
+22:16:35 - INFO - eval_link_prediction - valid mrr: 0.1083  hits@1: 0.0577  hits@3: 0.1086  hits@10: 0.2032  
+22:16:36 - INFO - link_prediction - Epoch 40/40 [0/3360]: 0.030813
+22:16:47 - INFO - link_prediction - Epoch 40/40 [168/3360]: 0.037498
+22:16:59 - INFO - link_prediction - Epoch 40/40 [336/3360]: 0.023005
+22:17:11 - INFO - link_prediction - Epoch 40/40 [504/3360]: 0.027488
+22:17:22 - INFO - link_prediction - Epoch 40/40 [672/3360]: 0.037082
+22:17:34 - INFO - link_prediction - Epoch 40/40 [840/3360]: 0.034352
+22:17:45 - INFO - link_prediction - Epoch 40/40 [1008/3360]: 0.025024
+22:17:57 - INFO - link_prediction - Epoch 40/40 [1176/3360]: 0.024867
+22:18:09 - INFO - link_prediction - Epoch 40/40 [1344/3360]: 0.024698
+22:18:20 - INFO - link_prediction - Epoch 40/40 [1512/3360]: 0.029955
+22:18:32 - INFO - link_prediction - Epoch 40/40 [1680/3360]: 0.037836
+22:18:44 - INFO - link_prediction - Epoch 40/40 [1848/3360]: 0.026116
+22:18:55 - INFO - link_prediction - Epoch 40/40 [2016/3360]: 0.029882
+22:19:07 - INFO - link_prediction - Epoch 40/40 [2184/3360]: 0.032354
+22:19:19 - INFO - link_prediction - Epoch 40/40 [2352/3360]: 0.023448
+22:19:30 - INFO - link_prediction - Epoch 40/40 [2520/3360]: 0.023660
+22:19:42 - INFO - link_prediction - Epoch 40/40 [2688/3360]: 0.036032
+22:19:53 - INFO - link_prediction - Epoch 40/40 [2856/3360]: 0.027489
+22:20:05 - INFO - link_prediction - Epoch 40/40 [3024/3360]: 0.023734
+22:20:17 - INFO - link_prediction - Epoch 40/40 [3192/3360]: 0.032816
+22:20:28 - INFO - link_prediction - Evaluating on sample of training set
+22:20:29 - INFO - eval_link_prediction - [2,560/11,633]
+22:20:31 - INFO - eval_link_prediction - [5,120/11,633]
+22:20:32 - INFO - eval_link_prediction - [7,680/11,633]
+22:20:33 - INFO - eval_link_prediction - [10,240/11,633]
+22:20:34 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:20:36 - INFO - eval_link_prediction - [131/659]
+22:20:37 - INFO - eval_link_prediction - [262/659]
+22:20:39 - INFO - eval_link_prediction - [393/659]
+22:20:40 - INFO - eval_link_prediction - [524/659]
+22:20:42 - INFO - eval_link_prediction - [655/659]
+22:20:42 - INFO - eval_link_prediction - train mrr: 0.1421  hits@1: 0.0691  hits@3: 0.1436  hits@10: 0.2900  
+22:20:42 - INFO - link_prediction - Evaluating on validation set
+22:20:43 - INFO - eval_link_prediction - [3,072/13,087]
+22:20:45 - INFO - eval_link_prediction - [6,144/13,087]
+22:20:46 - INFO - eval_link_prediction - [9,216/13,087]
+22:20:48 - INFO - eval_link_prediction - [12,288/13,087]
+22:20:48 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:20:50 - INFO - eval_link_prediction - [131/659]
+22:20:52 - INFO - eval_link_prediction - [262/659]
+22:20:53 - INFO - eval_link_prediction - [393/659]
+22:20:55 - INFO - eval_link_prediction - [524/659]
+22:20:57 - INFO - eval_link_prediction - [655/659]
+22:20:57 - INFO - eval_link_prediction - valid mrr: 0.1080  hits@1: 0.0575  hits@3: 0.1083  hits@10: 0.2028  
+22:20:57 - INFO - link_prediction - Evaluating on validation set (with filtering)
+22:20:59 - INFO - eval_link_prediction - [3,072/13,087]
+22:21:00 - INFO - eval_link_prediction - [6,144/13,087]
+22:21:02 - INFO - eval_link_prediction - [9,216/13,087]
+22:21:03 - INFO - eval_link_prediction - [12,288/13,087]
+22:21:04 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:21:31 - INFO - eval_link_prediction - [131/659]
+22:21:57 - INFO - eval_link_prediction - [262/659]
+22:22:24 - INFO - eval_link_prediction - [393/659]
+22:22:51 - INFO - eval_link_prediction - [524/659]
+22:23:16 - INFO - eval_link_prediction - [655/659]
+22:23:17 - INFO - eval_link_prediction - valid mrr: 0.1083  hits@1: 0.0577  hits@3: 0.1086  hits@10: 0.2032  mrr_filt: 0.1375  hits@1_filt: 0.0768  hits@3_filt: 0.1425  hits@10_filt: 0.2572  
+22:23:17 - INFO - eval_link_prediction - valid_mrr_filt_both_new: 0.1455  valid_mrr_filt_head_new: 0.1627  valid_mrr_filt_tail_new: 0.1016  
+22:23:17 - INFO - eval_link_prediction - pred_head 1-to-1_mrr: 0.3656  1-to-many_mrr: 0.1761  many-to-1_mrr: 0.0714  many-to-many_mrr: 0.0875  
+22:23:17 - INFO - eval_link_prediction - pred_tail 1-to-1_mrr: 0.3748  1-to-many_mrr: 0.0378  many-to-1_mrr: 0.4546  many-to-many_mrr: 0.1375  
+22:23:17 - INFO - link_prediction - Evaluating on test set
+22:23:19 - INFO - eval_link_prediction - [3,072/14,541]
+22:23:21 - INFO - eval_link_prediction - [6,144/14,541]
+22:23:22 - INFO - eval_link_prediction - [9,216/14,541]
+22:23:24 - INFO - eval_link_prediction - [12,288/14,541]
+22:23:25 - INFO - eval_link_prediction - Computing metrics on set of triples
+22:23:58 - INFO - eval_link_prediction - [165/827]
+22:24:27 - INFO - eval_link_prediction - [330/827]
+22:25:21 - INFO - eval_link_prediction - [495/827]
+22:25:54 - INFO - eval_link_prediction - [660/827]
+22:26:27 - INFO - eval_link_prediction - [825/827]
+22:26:27 - INFO - eval_link_prediction - test mrr: 0.0936  hits@1: 0.0476  hits@3: 0.0910  hits@10: 0.1799  mrr_filt: 0.1195  hits@1_filt: 0.0631  hits@3_filt: 0.1223  hits@10_filt: 0.2296  
+22:26:27 - INFO - eval_link_prediction - test_mrr_filt_both_new: 0.1315  test_mrr_filt_head_new: 0.1486  test_mrr_filt_tail_new: 0.0818  
+22:26:27 - INFO - eval_link_prediction - pred_head 1-to-1_mrr: 0.3402  1-to-many_mrr: 0.1413  many-to-1_mrr: 0.0535  many-to-many_mrr: 0.0878  
+22:26:27 - INFO - eval_link_prediction - pred_tail 1-to-1_mrr: 0.3269  1-to-many_mrr: 0.0340  many-to-1_mrr: 0.3450  many-to-many_mrr: 0.1152  
+22:26:27 - INFO - train - Completed after 3:00:22
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n488
+Job ID: 20513995
+Cluster: uc2
+User/Group: ucgvm/stud
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 20
+CPU Utilized: 02:59:41
+CPU Efficiency: 4.95% of 2-12:29:20 core-walltime
+Job Wall-clock time: 03:01:28
+Memory Utilized: 3.56 GB
+Memory Efficiency: 0.00% of 0.00 MB
