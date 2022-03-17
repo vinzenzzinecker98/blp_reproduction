@@ -15,7 +15,7 @@ import numpy as np
 import scipy.stats
 import nltk
 from data import DROPPED
-
+from transformers import DistilBertTokenizer
 from data import GloVeTokenizer
 import utils
 
@@ -67,14 +67,14 @@ def embed_entities(dim, model, rel_model, max_len, emb_batch_size, checkpoint,
         masks = tokenized_data['attention_mask'].float().to(device)
 
         return encoder.encode(tokens.to(device), masks.to(device))
-
+    print("model", model)
     if model.startswith('bert') or model == 'blp':
-        tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+        tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
     else:
         tokenizer = GloVeTokenizer('data/glove/glove.6B.300d-maps.pt')
 
     encoder = utils.get_model(model, dim, rel_model,
-                              encoder_name='bert-base-cased',
+                              encoder_name='distilbert-base-uncased',
                               loss_fn='margin', num_entities=0,
                               num_relations=1, regularizer=0.0).to(device)
     encoder = torch.nn.DataParallel(encoder)
