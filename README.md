@@ -1,4 +1,6 @@
-Reproduction of https://github.com/dfdazac/blp for the Seminar "Representation Learning on Knowledge graphs"
+Reproduction of [Bert for Link Prediction](https://github.com/dfdazac/blp) for the Seminar "Representation Learning on Knowledge graphs".
+
+[Read seminar thesis](seminar_paper.pdf)
 
 How to run:
  - clone repository
